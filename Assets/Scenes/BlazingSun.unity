@@ -134,6 +134,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_BlazingSun
       objectReference: {fileID: 0}
+    - target: {fileID: 1642982603992327650, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: _radius
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642982603992327650, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: _amnVisual
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642982603992327650, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: _percentage
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642982603992327650, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: _maxScaleValue
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642982603992327650, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: _visualModifier
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 1642982603992327651, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
       propertyPath: m_RootOrder
       value: 2
