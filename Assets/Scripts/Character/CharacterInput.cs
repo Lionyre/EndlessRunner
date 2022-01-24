@@ -18,6 +18,7 @@ public class CharacterInput : MonoBehaviour
     public GameObject CharacterMesh;
 
     [SerializeField] private RaycastScript _Raycastscript;
+    private bool IsSliding;
 
     // Update is called once per frame
     void Update()
@@ -53,7 +54,7 @@ public class CharacterInput : MonoBehaviour
 
     void JumpCharacter()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && TimerSaut <= 0)
+        if(Input.GetKeyDown(KeyCode.Space) && TimerSaut <= 0 && IsSliding == false)
         {
             Jump = true;
         }
@@ -105,12 +106,15 @@ public class CharacterInput : MonoBehaviour
 
         if(TempsSlider > 0f)
         {
+            IsSliding = true;
+            TimerSaut = 0f;
             ColliderCharacter.SetActive(false);
             ColliderSlide.SetActive(true);
             CharacterMesh.transform.localScale = new Vector3(1,0.5f,1); 
         }
         else if(TempsSlider <= 0)
         {
+            IsSliding = false;
             ColliderSlide.SetActive(false);
             ColliderCharacter.SetActive(true);
             CharacterMesh.transform.localScale = new Vector3(1,1,1); 
