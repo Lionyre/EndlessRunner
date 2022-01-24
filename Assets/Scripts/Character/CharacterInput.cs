@@ -7,6 +7,7 @@ public class CharacterInput : MonoBehaviour
     private float TimerSaut;
     [SerializeField] private float TempsDuSaut;
     private bool Jump;
+    [SerializeField] private float PuissanceChute;
 
     private float TempsSlider;
     [SerializeField] private float TempsDuSlide;
@@ -15,6 +16,8 @@ public class CharacterInput : MonoBehaviour
     public GameObject ColliderCharacter;
     public GameObject ColliderSlide;
     public GameObject CharacterMesh;
+
+    [SerializeField] private RaycastScript _Raycastscript;
 
     // Update is called once per frame
     void Update()
@@ -59,19 +62,29 @@ public class CharacterInput : MonoBehaviour
             Jump = false;
         }
 
-        if(Jump == true)
+        if(Jump == true && _Raycastscript.TouchingGround == true)
         {
             TimerSaut = TempsDuSaut;
         }
 
         if(TimerSaut > 0f)
         {
-            transform.position = new Vector3(transform.position.x,4,transform.position.z);
+            transform.position = new Vector3(gameObject.transform.position.x,4,gameObject.transform.position.z);
         }
         else if(TimerSaut <= 0)
         {
-            transform.position = new Vector3(transform.position.x,0,transform.position.z);
+            // TP perso
+            // transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
+        if(_Raycastscript.TouchingGround == false)
+        {
+            transform.position -= new Vector3(0,PuissanceChute,0);
+        }
+        // else
+        // {
+            //perso reste à 0 si besoin
+        //     transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        // }
     }
 
     void SlideCharacter()
