@@ -19,12 +19,15 @@ public class CharacterInput : MonoBehaviour
 
     [SerializeField] private RaycastScript _Raycastscript;
     private bool IsSliding;
+    private float TimerDéplacement;
+    [SerializeField] private float CooldownDeplacement;
 
     // Update is called once per frame
     void Update()
     {
         TimerSaut -= Time.deltaTime;
         TempsSlider -= Time.deltaTime;
+        TimerDéplacement -= Time.deltaTime;
         if(TempsSlider <= 0)
         {
             TempsSlider = 0f;
@@ -34,6 +37,10 @@ public class CharacterInput : MonoBehaviour
         {
             TimerSaut = 0f;
         }
+        if(TimerDéplacement <= 0)
+        {
+            TimerDéplacement = 0f;
+        }
         MovementCharacter();
         JumpCharacter();
         SlideCharacter();
@@ -41,13 +48,15 @@ public class CharacterInput : MonoBehaviour
 
     void MovementCharacter()
     {  
-        if(Input.GetKeyDown(KeyCode.Q) && transform.position.x >= -3)
+        if(Input.GetKeyDown(KeyCode.Q) && transform.position.x >= -3 && TimerDéplacement <= 0)
         {
             transform.position += new Vector3(-4,0,0);
+            TimerDéplacement = CooldownDeplacement;
         }
-        if(Input.GetKeyDown(KeyCode.D) && transform.position.x <= 3)
+        if(Input.GetKeyDown(KeyCode.D) && transform.position.x <= 3 && TimerDéplacement <= 0)
         {
             transform.position += new Vector3(4,0,0);
+            TimerDéplacement = CooldownDeplacement;
         }
 
     }
