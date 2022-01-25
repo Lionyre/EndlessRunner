@@ -88,7 +88,14 @@ public class CharacterInput : MonoBehaviour
         }
         if(_Raycastscript.TouchingGround == false)
         {
-            transform.position -= new Vector3(0,PuissanceChute,0);
+            if(IsSliding == true)
+            {
+                transform.position -= new Vector3(0,PuissanceChute * 1.7f,0);
+            }
+            else if(IsSliding == false)
+            {
+                transform.position -= new Vector3(0,PuissanceChute,0);
+            }
         }
         // else
         // {
@@ -99,9 +106,17 @@ public class CharacterInput : MonoBehaviour
 
     void SlideCharacter()
     {
-        if(Input.GetKeyDown(KeyCode.S) && TempsSlider <= 0)
+        if(Input.GetKeyDown(KeyCode.S) && TempsSlider <= 0 && TimerDéplacement <= 0)
         {
             Slide = true;
+            TimerDéplacement = CooldownDeplacement;
+        }
+        else if(Input.GetKeyUp(KeyCode.Space) && _Raycastscript.TouchingGround == true && TimerDéplacement <= 0)
+        {
+            Slide = false;
+            TempsSlider = 0f;
+            TimerSaut = TempsDuSaut;
+            TimerDéplacement = CooldownDeplacement;
         }
         else
         {
