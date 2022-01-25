@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerSpawnRoad: 0
-  TimerSpawnRoute: 23.85
+  TimerSpawnRoute: 23.6
   PrefabRoad: {fileID: 8760002478426240972, guid: e4ca4733cf794fb458273a8b78152e63, type: 3}
   PointSpawn: {fileID: 400816274}
   _Spawn:
@@ -298,6 +298,8 @@ MonoBehaviour:
   - {fileID: 4608818145250475029, guid: 13b47f9c56e9ad84c9a4c361a2036097, type: 3}
   LeSpawn: 0
   LesObjects: 0
+  Coin: {fileID: 4146660909646735887, guid: 0c5602f453933cc4b98badb4f8c9dfd3, type: 3}
+  coinCanBePlace: 0
 --- !u!4 &422012550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8760002478426240976, guid: e4ca4733cf794fb458273a8b78152e63, type: 3}
@@ -474,7 +476,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540728375}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.1624532
@@ -636,7 +638,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643822350}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -1498,7 +1500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4146660909646735883, guid: 0c5602f453933cc4b98badb4f8c9dfd3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.09
+      value: 53.9
       objectReference: {fileID: 0}
     - target: {fileID: 4146660909646735883, guid: 0c5602f453933cc4b98badb4f8c9dfd3, type: 3}
       propertyPath: m_LocalRotation.w
