@@ -21,8 +21,13 @@ public class CharacterInput : MonoBehaviour
     private bool IsSliding;
     private float TimerDéplacement;
     [SerializeField] private float CooldownDeplacement;
+    [SerializeField] private CharacterFX _characterFX;
 
-    // Update is called once per frame
+    private void Start() 
+    {
+        _characterFX = GetComponentInChildren<CharacterFX>();
+    }
+
     void Update()
     {
         TimerSaut -= Time.deltaTime;
@@ -50,11 +55,13 @@ public class CharacterInput : MonoBehaviour
     {  
         if(Input.GetKeyDown(KeyCode.Q) && transform.position.x >= -3 && TimerDéplacement <= 0)
         {
+            _characterFX.DashFX();
             transform.position += new Vector3(-4,0,0);
             TimerDéplacement = CooldownDeplacement;
         }
         if(Input.GetKeyDown(KeyCode.D) && transform.position.x <= 3 && TimerDéplacement <= 0)
         {
+            _characterFX.DashFX();
             transform.position += new Vector3(4,0,0);
             TimerDéplacement = CooldownDeplacement;
         }
@@ -66,10 +73,12 @@ public class CharacterInput : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && TimerSaut <= 0 && IsSliding == false)
         {
             Jump = true;
+            _characterFX.JumpFX();
         }
         else
         {
             Jump = false;
+            _characterFX.JumpAnim(false);
         }
 
         if(Jump == true && _Raycastscript.TouchingGround == true)
@@ -79,10 +88,12 @@ public class CharacterInput : MonoBehaviour
 
         if(TimerSaut > 0f)
         {
+            _characterFX.JumpAnim(true);
             transform.position = new Vector3(gameObject.transform.position.x,4,gameObject.transform.position.z);
         }
         else if(TimerSaut <= 0)
         {
+            _characterFX.JumpAnim(false);
             // TP perso
             // transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
@@ -90,6 +101,7 @@ public class CharacterInput : MonoBehaviour
         {
             if(IsSliding == true)
             {
+                _characterFX.JumpAnim(false);
                 transform.position -= new Vector3(0,PuissanceChute * 1.7f,0);
             }
             else if(IsSliding == false)
@@ -125,6 +137,7 @@ public class CharacterInput : MonoBehaviour
 
         if(Slide == true)
         {
+            _characterFX.SlideFX();
             TempsSlider = TempsDuSlide;
         }
 
