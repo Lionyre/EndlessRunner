@@ -5,26 +5,15 @@ using UnityEngine;
 public class CharacterRenderer : MonoBehaviour
 {
     [SerializeField] private Animator _playerAnimator;
-    private float xValue;
 
-    private void Update() 
-    {
-        StartRunning();
-    }
+    // private void Start() 
+    // {
+    //     StartRunning();
+    // }
 
     public void StartRunning()
     {
-        if(xValue < 1)
-        {
-            xValue += Time.deltaTime;
-
-            if(xValue >= 1)
-            {
-                xValue = 1;
-            }
-
-            _playerAnimator.SetFloat("x", xValue);
-        }    
+        _playerAnimator.SetBool("_run", true);
     }
 
     public void SetJumpBool(bool isJumping)
@@ -32,8 +21,8 @@ public class CharacterRenderer : MonoBehaviour
         _playerAnimator.SetBool("_jump", isJumping);
     }
 
-    public void SetSlideTrigger()
+    public void SetSlideBool(bool isSliding)
     {
-        _playerAnimator.SetTrigger("_slide");
+        _playerAnimator.SetBool("_slide", isSliding);
     }
 }

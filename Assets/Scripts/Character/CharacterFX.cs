@@ -37,9 +37,13 @@ public class CharacterFX : MonoBehaviour
 
     public void SlideFX()
     {
-        _characterRenderer.SetSlideTrigger();
         _particles[3].Play();
         _particles[4].Play();
         _screenShake.CameraShake(0, 1, 1, 0.6f);
+    }
+
+    public void SlidAnim(bool isSliding)
+    {
+        _characterRenderer.SetSlideBool(isSliding);
     }
 }

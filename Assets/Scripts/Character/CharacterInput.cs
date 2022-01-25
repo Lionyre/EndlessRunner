@@ -122,6 +122,7 @@ public class CharacterInput : MonoBehaviour
         {
             Slide = true;
             TimerDéplacement = CooldownDeplacement;
+            _characterFX.SlidAnim(true);
         }
         else if(Input.GetKeyUp(KeyCode.Space) && _Raycastscript.TouchingGround == true && TimerDéplacement <= 0)
         {
@@ -129,6 +130,8 @@ public class CharacterInput : MonoBehaviour
             TempsSlider = 0f;
             TimerSaut = TempsDuSaut;
             TimerDéplacement = CooldownDeplacement;
+            _characterFX.JumpFX();
+            _characterFX.JumpAnim(true);
         }
         else
         {
@@ -147,14 +150,15 @@ public class CharacterInput : MonoBehaviour
             TimerSaut = 0f;
             ColliderCharacter.SetActive(false);
             ColliderSlide.SetActive(true);
-            CharacterMesh.transform.localScale = new Vector3(1,0.5f,1); 
+            // CharacterMesh.transform.localScale = new Vector3(1,0.5f,1); 
         }
         else if(TempsSlider <= 0)
         {
             IsSliding = false;
             ColliderSlide.SetActive(false);
             ColliderCharacter.SetActive(true);
-            CharacterMesh.transform.localScale = new Vector3(1,1,1); 
+            _characterFX.SlidAnim(false);
+            // CharacterMesh.transform.localScale = new Vector3(1,1,1); 
         }
     }
 
