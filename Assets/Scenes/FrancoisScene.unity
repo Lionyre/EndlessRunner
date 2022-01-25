@@ -269,7 +269,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff7ae43e1fe4c2a45924990c00a61833, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   ColliderSlide: {fileID: 540728375}
   CharacterMesh: {fileID: 845549734}
   _Raycastscript: {fileID: 845549735}
-  CooldownDeplacement: 1
+  CooldownDeplacement: 0.2
 --- !u!1 &899410136
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +496,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2f775636a5deca64abce37b033a19bbd, type: 2}
+  - {fileID: 2100000, guid: e1132f747c94afb4faeec8fd06548c77, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
