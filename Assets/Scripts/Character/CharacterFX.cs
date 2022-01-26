@@ -37,6 +37,8 @@ public class CharacterFX : MonoBehaviour
 
     public void SlideFX()
     {
+        _particles[0].Play();
+        _particles[1].Play();
         _particles[3].Play();
         _particles[4].Play();
         _screenShake.CameraShake(0, 1, 1, 0.6f);

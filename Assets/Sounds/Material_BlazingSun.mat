@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Material_BlazingSun
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _EMISSION _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+  m_ShaderKeywords: _EMISSION _ENVIRONMENTREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -121,6 +121,6 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 0.8353552, b: 0, a: 1}
     - _Color: {r: 1, g: 0.8353552, b: 0, a: 1}
-    - _EmissionColor: {r: 4, g: 2.8078432, b: 0, a: 1}
+    - _EmissionColor: {r: 2.9960785, g: 2.1176472, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []

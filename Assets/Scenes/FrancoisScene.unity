@@ -798,6 +798,7 @@ MonoBehaviour:
   CharacterMesh: {fileID: 845549734}
   _Raycastscript: {fileID: 845549735}
   CooldownDeplacement: 0.2
+  _characterFX: {fileID: 0}
 --- !u!1 &899410136
 GameObject:
   m_ObjectHideFlags: 0

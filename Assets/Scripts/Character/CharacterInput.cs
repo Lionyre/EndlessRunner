@@ -21,7 +21,7 @@ public class CharacterInput : MonoBehaviour
     private bool IsSliding;
     private float TimerDéplacement;
     [SerializeField] private float CooldownDeplacement;
-    [SerializeField] private CharacterFX _characterFX;
+    [SerializeField] private CharacterFX _characterFX = null;
 
     private void Start() 
     {

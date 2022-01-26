@@ -6,10 +6,10 @@ public class CharacterRenderer : MonoBehaviour
 {
     [SerializeField] private Animator _playerAnimator;
 
-    // private void Start() 
-    // {
-    //     StartRunning();
-    // }
+    private void Start() 
+    {
+        StartRunning();
+    }
 
     public void StartRunning()
     {
