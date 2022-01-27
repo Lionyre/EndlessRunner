@@ -23,26 +23,12 @@ public class Coin : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("ToucheLaPiece");
             TheScore.GetComponent<GameManager>().Score += 15;
             Destroy(this.gameObject);
         }
         else if(other.gameObject.tag == "Obstacle" || other.gameObject.tag == "Danger")
         {
             ProceduraleStopPiece.GetComponent<generationProcedurale>().coinCanBePlace = 1;
-            Destroy(this.gameObject);
-        }
-        else if(other.gameObject.tag == "DestroyCoin")
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "Player")
-        {
-            Debug.Log("ToucheLaPiece");
-            TheScore.GetComponent<GameManager>().Score += 15;
             Destroy(this.gameObject);
         }
         else if(other.gameObject.tag == "DestroyCoin")

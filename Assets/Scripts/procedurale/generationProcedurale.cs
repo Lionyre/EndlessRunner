@@ -94,7 +94,6 @@ public class generationProcedurale : MonoBehaviour
                     SwitchEtat();
                     break;
                     case 3:
-                    Debug.Log("IsCorrect");
                     Instantiate(_ObjectForSpawn[ChoixRandomA], _Spawn[0]);
                     Instantiate(_ObjectForSpawn[ChoixRandomB], _Spawn[1]);
                     EmplacementPiece = 2;

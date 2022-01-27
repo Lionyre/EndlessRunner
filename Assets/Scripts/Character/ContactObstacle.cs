@@ -11,11 +11,9 @@ public class ContactObstacle : MonoBehaviour
         if(other.gameObject.tag == "Danger")
         {
             IsDead = true;
-            Debug.Log("Die");
         }
         else if(other.gameObject.tag == "Obstacle")
         {
-            Debug.Log("Outch");
             Vie -= 1;
         }
     }
