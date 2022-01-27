@@ -35,9 +35,9 @@ public class generationProcedurale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TimerSpawnRoad -= Time.deltaTime;
-        TimerSpawn -= Time.deltaTime;
-        SpawnPiece -= Time.deltaTime;
+        TimerSpawnRoad -= Time.fixedDeltaTime;
+        TimerSpawn -= Time.fixedDeltaTime;
+        SpawnPiece -= Time.fixedDeltaTime;
         SpawnRoad();
         SpawnObstacles();
         SpawnCoins();
@@ -188,7 +188,7 @@ public class generationProcedurale : MonoBehaviour
                         if(SpawnPiece <= 0)
                         {
                         Instantiate(Coin,_SpawnCoin[EmplacementPiece]);
-                        SpawnPiece = 0.2f;
+                        SpawnPiece = 0.8f;
                         }
                         break;
                         case 1:
@@ -198,21 +198,21 @@ public class generationProcedurale : MonoBehaviour
                             if(SpawnPiece <= 0)
                             {
                             Instantiate(Coin,_SpawnCoin[1]);
-                            SpawnPiece = 0.2f;
+                            SpawnPiece = 0.8f;
                             }
                             break;
                             case 2:
                             if(SpawnPiece <= 0)
                             {
                             Instantiate(Coin,_SpawnCoin[0]);
-                            SpawnPiece = 0.2f;
+                            SpawnPiece = 0.8f;
                             }
                             break;
                             case 3:
                             if(SpawnPiece <= 0)
                             {
                             Instantiate(Coin,_SpawnCoin[2]);
-                            SpawnPiece = 0.2f;
+                            SpawnPiece = 0.8f;
                             }
                             break;
                         }

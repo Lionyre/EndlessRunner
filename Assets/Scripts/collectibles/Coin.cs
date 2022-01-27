@@ -53,8 +53,8 @@ public class Coin : MonoBehaviour
 
     void MouvementPiece()
     {
-        transform.Rotate(new Vector3(0,0,50) * Time.deltaTime);
-        transform.position -= new Vector3(0,0,vitessePiece * Time.deltaTime);
+        transform.Rotate(new Vector3(0,0,50) * Time.fixedDeltaTime);
+        transform.position -= new Vector3(0,0,vitessePiece * Time.fixedDeltaTime);
     }
 
     void InstantieLaPiece()
