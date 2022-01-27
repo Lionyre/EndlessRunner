@@ -6,9 +6,11 @@ public class Coin : MonoBehaviour
 {
     private GameObject TheScore;
     private float vitessePiece;
+    private GameObject ProceduraleStopPiece;
 
     private void Awake() {
         InstantieLaPiece();
+        ProceduraleStopPiece = GameObject.Find("PointSpawn");
     }
 
     // Update is called once per frame
@@ -21,21 +23,12 @@ public class Coin : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("ToucheLaPiece");
             TheScore.GetComponent<GameManager>().Score += 15;
             Destroy(this.gameObject);
         }
-        else if(other.gameObject.tag == "DestroyCoin")
+        else if(other.gameObject.tag == "Obstacle" || other.gameObject.tag == "Danger")
         {
-            Destroy(this.gameObject);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "Player")
-        {
-            Debug.Log("ToucheLaPiece");
-            TheScore.GetComponent<GameManager>().Score += 15;
+            ProceduraleStopPiece.GetComponent<generationProcedurale>().coinCanBePlace = 1;
             Destroy(this.gameObject);
         }
         else if(other.gameObject.tag == "DestroyCoin")
@@ -46,8 +39,8 @@ public class Coin : MonoBehaviour
 
     void MouvementPiece()
     {
-        transform.Rotate(new Vector3(0,0,50) * Time.deltaTime);
-        transform.position -= new Vector3(0,0,vitessePiece * Time.deltaTime);
+        transform.Rotate(new Vector3(0,0,50) * Time.fixedDeltaTime);
+        transform.position -= new Vector3(0,0,vitessePiece * Time.fixedDeltaTime);
     }
 
     void InstantieLaPiece()

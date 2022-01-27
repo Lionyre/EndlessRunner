@@ -21,6 +21,6 @@ public class movingRoad : MonoBehaviour
 
     void MouvementRoute()
     {
-        transform.position -= new Vector3(0,0,VitesseDeplacement * Time.deltaTime);
+        transform.position -= new Vector3(0,0,VitesseDeplacement * Time.fixedDeltaTime);
     }
 }

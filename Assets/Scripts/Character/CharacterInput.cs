@@ -18,7 +18,7 @@ public class CharacterInput : MonoBehaviour
     public GameObject CharacterMesh;
 
     [SerializeField] private RaycastScript _Raycastscript;
-    private bool IsSliding;
+    public bool IsSliding;
     private float TimerDéplacement;
     [SerializeField] private float CooldownDeplacement;
     [SerializeField] private CharacterFX _characterFX = null;
