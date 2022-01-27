@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vitesse += Time.fixedDeltaTime * 0.1f;;
         ScorePlayer.text = Score.ToString("000000");
     }
 }
