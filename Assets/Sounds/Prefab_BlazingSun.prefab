@@ -435,6 +435,7 @@ MonoBehaviour:
   _smoothSpeed: 10
   _amnVisual: 80
   _blazingSunPrefab: {fileID: 8158926299569507216, guid: 88afda4e6ace66946aa3ee110b38d862, type: 3}
+  _musicIndex: 1
 --- !u!1 &7380927584023887083
 GameObject:
   m_ObjectHideFlags: 0
