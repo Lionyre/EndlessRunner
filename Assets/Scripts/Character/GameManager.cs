@@ -14,13 +14,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject Collider;
     [SerializeField] private GameObject ColliderSlide;
     [SerializeField] private generationProcedurale StopGeneration;
-    private float BeforeReload = 5f;
+    private float BeforeReload = 1f;
+    private FrontRaycast TouchingObject;
+    private bool TouchTheObject;
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         PlayerIsDead();
+        MoreScore();
     }
 
     void PlayerIsDead()
@@ -28,15 +31,18 @@ public class GameManager : MonoBehaviour
         if(BoolSliding.IsSliding == true)
         {
             ContactFromCharacter = ColliderSlide.GetComponent<ContactObstacle>();
+            TouchTheObject = false;
         }
         else if(BoolSliding.IsSliding == false)
         {
             ContactFromCharacter = Collider.GetComponent<ContactObstacle>();
+            TouchingObject = Collider.GetComponent<FrontRaycast>();
+            TouchTheObject = TouchingObject.ColideWithObject;
         }
 
         if(ContactFromCharacter.IsDead == false)
         {
-            Vitesse += Time.fixedDeltaTime * 0.01f;
+            Vitesse += Time.fixedDeltaTime * 0.5f;
         }
         else if(ContactFromCharacter.IsDead == true)
         {
@@ -51,5 +57,13 @@ public class GameManager : MonoBehaviour
             }
         }
         ScorePlayer.text = Score.ToString("000000");
+    }
+
+    void MoreScore()
+    {
+        if(TouchTheObject == true)
+        {
+            Score += 1;
+        }
     }
 }

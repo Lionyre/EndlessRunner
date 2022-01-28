@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7807121648273940761}
   - component: {fileID: 3798315350586096072}
   - component: {fileID: 1270965132135728380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2866397077483564870}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.1, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: -0, y: 1.01, z: 0}
+  m_LocalScale: {x: 180, y: 180, z: 180}
   m_Children:
   - {fileID: 4180160671640481190}
   m_Father: {fileID: 0}
@@ -114,7 +114,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 54
+  m_Constraints: 118
   m_CollisionDetection: 0
 --- !u!114 &1270965132135728380
 MonoBehaviour:
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 4180160671640481190}
   - component: {fileID: 5816998124987708770}
   - component: {fileID: 4910378166295576289}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DessusCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
