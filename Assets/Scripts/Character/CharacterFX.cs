@@ -36,6 +36,11 @@ public class CharacterFX : MonoBehaviour
         _characterRenderer.SetJumpBool(isJumping);
     }
 
+    public void CoinFX()
+    {
+        _particles[5].Play();
+    }
+
     public void SlideFX()
     {
         _particles[0].Play();
