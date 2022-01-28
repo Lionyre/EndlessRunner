@@ -20,7 +20,6 @@ public class RaycastScript : MonoBehaviour
         {
             LastHit = hit.transform.gameObject;
             DistanceLigne = hit.point;
-            Debug.Log("Hit");
             TouchingGround = true;
         }
         else

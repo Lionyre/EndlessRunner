@@ -15,27 +15,29 @@ public class BlazingSun : MonoBehaviour
     [SerializeField, Range(1, 100)] private float _smoothSpeed = 10f;
     [SerializeField] private int _amnVisual = 64;
     [SerializeField] private GameObject _blazingSunPrefab;
-    private AudioSource _source;
+    private AudioSource[] _source;
     private float[] _samples;
     private float[] _spectrum;
     private float _sampleRate;
     private Transform[] _visualList;
     private float[] _visualScale;
+    public int _musicIndex;
     
 
     private void Start() 
     {
-        _source = GetComponent<AudioSource>();
+        _source = GetComponentsInChildren<AudioSource>();
         _samples = new float[_samplSize];
         _spectrum = new float[_samplSize];
         _sampleRate = AudioSettings.outputSampleRate;
         // SpawnLine();
         SpawnCircle();
+        _source[_musicIndex].enabled = true;
     }
 
     private void Update() 
     {
-        AnalyzeSound();
+        AnalyzeSound(_musicIndex);
         UpdateVisual();
     }
 
@@ -90,7 +92,7 @@ public class BlazingSun : MonoBehaviour
             float x = center.x + Mathf.Cos(ang) * radius;
             float y = center.y + Mathf.Sin(ang) * radius;
 
-            Vector3 pos = center + new Vector3(x, y, 0);
+            Vector3 pos = center + new Vector3(x, y, gameObject.transform.position.z);
             GameObject sunObject = Instantiate(_blazingSunPrefab, gameObject.transform) as GameObject;
             sunObject.transform.position = pos;
             sunObject.transform.rotation = Quaternion.LookRotation(Vector3.forward, pos);
@@ -109,9 +111,9 @@ public class BlazingSun : MonoBehaviour
             _visualList[i].position = Vector3.right * i;
         }
     }
-    private void AnalyzeSound()
+    private void AnalyzeSound(int musicIndex)
     {
-        _source.GetOutputData(_samples, 0);
+        _source[musicIndex].GetOutputData(_samples, 0);
 
         
         float sum = 0;
@@ -125,6 +127,6 @@ public class BlazingSun : MonoBehaviour
 
         _dbValue = 20 * Mathf.Log10(_rmsValue / 0.1f);
 
-        _source.GetSpectrumData(_spectrum, 0, FFTWindow.BlackmanHarris);
+        _source[musicIndex].GetSpectrumData(_spectrum, 0, FFTWindow.BlackmanHarris);
     }
 }
