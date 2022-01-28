@@ -27,9 +27,10 @@ public class CharacterFX : MonoBehaviour
         _particles[0].Play();
         _particles[1].Play();
         _particles[2].Play();
+        _particles[6].Play();
         _screenShake.CameraShake(0, 1, 4, 0.2f);
     }
-
+    
     public void JumpAnim(bool isJumping)
     {
         _characterRenderer.SetJumpBool(isJumping);
