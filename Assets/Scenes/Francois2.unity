@@ -2458,11 +2458,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1894375758, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
       propertyPath: m_Constraints
-      value: 122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1894375758, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8420648697911591554, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
       propertyPath: m_Height
