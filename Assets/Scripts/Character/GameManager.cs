@@ -17,6 +17,12 @@ public class GameManager : MonoBehaviour
     private float BeforeReload = 1f;
     private FrontRaycast TouchingObject;
     private bool TouchTheObject;
+    private GameObject BlazingSun;
+
+
+    private void Start() {
+        BlazingSun = GameObject.Find("Prefab_BlazingSun");
+    }
 
 
     // Update is called once per frame
@@ -64,6 +70,26 @@ public class GameManager : MonoBehaviour
         if(TouchTheObject == true)
         {
             Score += 1;
+        }
+    }
+
+    void VitesseSelonBPM()
+    {
+        switch(BlazingSun.GetComponent<BlazingSun>()._musicIndex)
+        {
+            case 0:
+            
+            break;
+
+
+            case 1:
+
+            break;
+
+
+            case 2:
+
+            break;
         }
     }
 }
