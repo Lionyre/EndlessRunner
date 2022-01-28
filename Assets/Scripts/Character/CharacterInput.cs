@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterInput : MonoBehaviour
 {
-    private float TimerSaut;
+    public float TimerSaut;
     [SerializeField] private float TempsDuSaut;
     private bool Jump;
     [SerializeField] private float PuissanceChute;
