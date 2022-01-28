@@ -1747,7 +1747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   TouchingGround: 0
 --- !u!114 &1119513867
 MonoBehaviour:
@@ -2244,6 +2244,30 @@ PrefabInstance:
     - target: {fileID: 1894375758, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314967732097503025, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314967732097503025, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
+      propertyPath: m_Constraints
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314967732097503025, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420648697070736064, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420648697070736065, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
+      propertyPath: m_Height
+      value: 1.109108
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420648697070736065, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
+      propertyPath: m_Center.y
+      value: -0.3921008
       objectReference: {fileID: 0}
     - target: {fileID: 8420648697911591554, guid: 18e58b202989c674db2f39bda107bae3, type: 3}
       propertyPath: m_Height

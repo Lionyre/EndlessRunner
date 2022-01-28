@@ -9,7 +9,7 @@ public class MeshPosition : MonoBehaviour
     private GameObject ColliderSlide;
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if(BoolSliding.IsSliding == true)
         {
