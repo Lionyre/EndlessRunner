@@ -15,7 +15,7 @@ public class DescendreCollider : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(scriptDuRaycast.TouchingGround == false && LeSaut.TimerSaut <= 0)
+        if(scriptDuRaycast.TouchingGround == false && LeSaut.TimerSaut <= 0 && LeSaut.IsSliding == false)
         {
             this.gameObject.transform.position -= new Vector3(0,0.1f,0);
         }
