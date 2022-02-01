@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2271021535271075209}
   - component: {fileID: 7660411855190462040}
   - component: {fileID: 6356941709267631670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slider
-  m_TagString: Obstacle
+  m_TagString: Danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496303685406951504}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 1.16, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0, y: 0.7069834, z: 0.7072302, w: 0}
+  m_LocalPosition: {x: -0, y: 2.67, z: 0}
+  m_LocalScale: {x: 180, y: 180, z: 250}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 180}
 --- !u!33 &2893557812522474831
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,8 +97,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.003959644, z: 0.01929023}
-  m_Center: {x: 0, y: -0.000009621977, z: 0.0003548768}
+  m_Size: {x: 0.020000001, y: 0.003959644, z: 0.01998622}
+  m_Center: {x: 0, y: -0.000009622011, z: 0.000006903172}
 --- !u!114 &7660411855190462040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,5 +125,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 54
+  m_Constraints: 118
   m_CollisionDetection: 0

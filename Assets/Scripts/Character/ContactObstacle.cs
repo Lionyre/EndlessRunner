@@ -18,7 +18,7 @@ public class ContactObstacle : MonoBehaviour
         }
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         LaVie();
     }
     void LaVie()
