@@ -7,10 +7,12 @@ public class Coin : MonoBehaviour
     private GameObject TheScore;
     private float vitessePiece;
     private GameObject ProceduraleStopPiece;
+    private CharacterFX _characterFX;
 
     private void Awake() {
         InstantieLaPiece();
         ProceduraleStopPiece = GameObject.Find("PointSpawn");
+        _characterFX = GameObject.Find("Character").GetComponentInChildren<CharacterFX>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class Coin : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             TheScore.GetComponent<GameManager>().Score += 15;
+            _characterFX.CoinFX();
             Destroy(this.gameObject);
         }
         else if(other.gameObject.tag == "Obstacle" || other.gameObject.tag == "Danger")
