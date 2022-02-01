@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         vitessePiece = TheScore.GetComponent<GameManager>().Vitesse;
         MouvementPiece();
@@ -42,7 +42,7 @@ public class Coin : MonoBehaviour
 
     void MouvementPiece()
     {
-        transform.Rotate(new Vector3(0,0,50) * Time.fixedDeltaTime);
+        transform.Rotate(new Vector3(0,0,100) * Time.fixedDeltaTime);
         transform.position -= new Vector3(0,0,vitessePiece * Time.fixedDeltaTime);
     }
 

@@ -13,7 +13,7 @@ public class movingRoad : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         VitesseDeplacement = LeGameManager.GetComponent<GameManager>().Vitesse;
         MouvementRoute();
