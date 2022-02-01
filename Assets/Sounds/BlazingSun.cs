@@ -15,7 +15,7 @@ public class BlazingSun : MonoBehaviour
     [SerializeField, Range(1, 100)] private float _smoothSpeed = 10f;
     [SerializeField] private int _amnVisual = 64;
     [SerializeField] private GameObject _blazingSunPrefab;
-    private AudioSource[] _source;
+    public AudioSource[] _source;
     private float[] _samples;
     private float[] _spectrum;
     private float _sampleRate;
