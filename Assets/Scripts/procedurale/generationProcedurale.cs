@@ -12,6 +12,7 @@ public class generationProcedurale : MonoBehaviour
     public List<Transform> _Spawn = new List<Transform>();
     public List<Transform> _SpawnCoin = new List<Transform>();
     public List<GameObject> _ObjectForSpawn = new List<GameObject>();
+    public List<GameObject> _ObjetDansLongueur = new List<GameObject>();
     public int LeSpawn;
     public int LesObjects;
     private float TimerSpawn;
@@ -105,7 +106,7 @@ public class generationProcedurale : MonoBehaviour
             case 2:
             if(TimerSpawn > 0)
             {
-                Instantiate(_ObjectForSpawn[2], _Spawn[1]);
+                Instantiate(_ObjetDansLongueur[0], _Spawn[1]);
                 Debug.Log("Longueur");
             }
             break;

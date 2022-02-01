@@ -507,17 +507,21 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4821693342692219288, guid: 09cde3b4eebd91043b7b98acec8da2a6, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4821693342692219295, guid: 09cde3b4eebd91043b7b98acec8da2a6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 185.2459
+      value: 127.4736
       objectReference: {fileID: 0}
     - target: {fileID: 4821693342692219295, guid: 09cde3b4eebd91043b7b98acec8da2a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 92.622955
+      value: 63.736786
       objectReference: {fileID: 0}
     - target: {fileID: 4821693342692219295, guid: 09cde3b4eebd91043b7b98acec8da2a6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.2
+      value: -31.953491
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09cde3b4eebd91043b7b98acec8da2a6, type: 3}
@@ -663,6 +667,7 @@ MonoBehaviour:
   PrefabRythmLeft: {fileID: 2930125308836997767, guid: d4e0e72fdf2adca41a6e5b8ebd1316e6, type: 3}
   SpawnRight: {fileID: 1321811515}
   SpawnLeft: {fileID: 1955667801}
+  SunRythm: {fileID: 0}
 --- !u!1001 &971249392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1581,6 +1586,14 @@ PrefabInstance:
       objectReference: {fileID: 2866397077483564870, guid: 08ef79ce3192d8b448b23ed540407b71, type: 3}
     - target: {fileID: 3539944327898883521, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
       propertyPath: _ObjectForSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 1260928953722707226, guid: b1a3b49382cdb5749a69f5cc13e8930e, type: 3}
+    - target: {fileID: 3539944327898883521, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
+      propertyPath: _ObjetDansLongueur.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539944327898883521, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
+      propertyPath: _ObjetDansLongueur.Array.data[0]
       value: 
       objectReference: {fileID: 1260928953722707226, guid: b1a3b49382cdb5749a69f5cc13e8930e, type: 3}
     - target: {fileID: 3539944327898883526, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}

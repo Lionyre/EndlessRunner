@@ -11,6 +11,7 @@ public class InputInRythm : MonoBehaviour
     public GameObject PrefabRythmLeft;
     public GameObject SpawnRight;
     public GameObject SpawnLeft;
+    [SerializeField] private BlazingSun SunRythm;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,21 @@ public class InputInRythm : MonoBehaviour
         TimerPressInput = BPM /60;
     }
 
+    void BPMmusic()
+    {
+        switch(SunRythm._musicIndex)
+        {
+            case 0:
+            break;
+
+            case 1:
+            break;
+
+            case 2:
+            break;
+        }
+    }
+
     IEnumerator RythmFunction()
     {
         while(true)
@@ -38,7 +54,7 @@ public class InputInRythm : MonoBehaviour
         yield return new WaitForSeconds(TimerPressInput);
         CanPress = true;
         Debug.Log("CanBePress");
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.6f);
         CanPress = false;
         }
     }
