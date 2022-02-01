@@ -22,6 +22,7 @@ public class CharacterInput : MonoBehaviour
     private float TimerDéplacement;
     [SerializeField] private float CooldownDeplacement;
     [SerializeField] private CharacterFX _characterFX = null;
+    [SerializeField] private InputInRythm RythmPress;
 
     private void Start() 
     {
@@ -53,13 +54,13 @@ public class CharacterInput : MonoBehaviour
 
     void MovementCharacter()
     {  
-        if(Input.GetKeyDown(KeyCode.Q) && transform.position.x >= -3 && TimerDéplacement <= 0)
+        if(Input.GetKeyDown(KeyCode.Q) && transform.position.x >= -3 && RythmPress.CanPress == true)
         {
             _characterFX.DashFX();
             transform.position += new Vector3(-4,0,0);
             TimerDéplacement = CooldownDeplacement;
         }
-        if(Input.GetKeyDown(KeyCode.D) && transform.position.x <= 3 && TimerDéplacement <= 0)
+        if(Input.GetKeyDown(KeyCode.D) && transform.position.x <= 3 && RythmPress.CanPress == true)
         {
             _characterFX.DashFX();
             transform.position += new Vector3(4,0,0);

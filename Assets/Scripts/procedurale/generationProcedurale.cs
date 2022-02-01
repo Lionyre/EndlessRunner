@@ -50,7 +50,7 @@ public class generationProcedurale : MonoBehaviour
             coinCanBePlace = Random.Range(0,2);
             TimerSpawn = 0.001f;
             SpawnPiece = 0.001f;
-            LeSpawn = Random.Range(0,3);
+            LeSpawn = Random.Range(0,4);
             if(LeSpawn == 0 || LeSpawn == 2)
             {
                 EmplacementPiece = Random.Range(0,3);
@@ -105,7 +105,14 @@ public class generationProcedurale : MonoBehaviour
             case 2:
             if(TimerSpawn > 0)
             {
-                
+                Instantiate(_ObjectForSpawn[2], _Spawn[1]);
+                Debug.Log("Longueur");
+            }
+            break;
+            case 3:
+            if(TimerSpawn > 0)
+            {
+
             }
             break;
         }
