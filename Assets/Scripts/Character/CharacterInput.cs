@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterInput : MonoBehaviour
 {
-    private float TimerSaut;
+    public float TimerSaut;
     [SerializeField] private float TempsDuSaut;
     private bool Jump;
     [SerializeField] private float PuissanceChute;
@@ -99,14 +99,22 @@ public class CharacterInput : MonoBehaviour
         }
         if(_Raycastscript.TouchingGround == false)
         {
-            if(IsSliding == true)
+            if(transform.position.y <= -0.06f)
+            {
+                transform.position = new Vector3(transform.position.x, -0.04f, transform.position.z);
+                Debug.Log("EstEnDesous");
+            }
+            else
+            {
+                if(IsSliding == true)
             {
                 _characterFX.JumpAnim(false);
                 transform.position -= new Vector3(0,PuissanceChute * 1.7f,0);
-            }
-            else if(IsSliding == false)
-            {
+                }
+                else if(IsSliding == false)
+                {
                 transform.position -= new Vector3(0,PuissanceChute,0);
+                }
             }
         }
         // else
