@@ -12,6 +12,7 @@ public class InputInRythm : MonoBehaviour
     public GameObject SpawnRight;
     public GameObject SpawnLeft;
     [SerializeField] private BlazingSun SunRythm;
+    [SerializeField] private Animator _animatorMidle;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class InputInRythm : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        TimerPressInput = BPM /60;
+        TimerPressInput = 60/BPM;
     }
 
     void BPMmusic()
@@ -53,8 +54,11 @@ public class InputInRythm : MonoBehaviour
           CanPress = false;
         yield return new WaitForSeconds(TimerPressInput);
         CanPress = true;
+        _animatorMidle.SetBool("Beat",true);
+        yield return new WaitForSeconds(0.001f);
+        _animatorMidle.SetBool("Beat",false);
         Debug.Log("CanBePress");
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.2f);
         CanPress = false;
         }
     }

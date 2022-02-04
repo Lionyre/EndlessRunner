@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
         if(ContactFromCharacter.IsDead == false)
         {
-            Vitesse += Time.fixedDeltaTime * 0.5f;
+            //Vitesse += Time.fixedDeltaTime * 0.5f;
         }
         else if(ContactFromCharacter.IsDead == true)
         {

@@ -5002,7 +5002,7 @@ GameObject:
   - component: {fileID: 917095212532490234}
   - component: {fileID: 7350688500821575486}
   - component: {fileID: 8259019157633502397}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: DessusCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5034,8 +5034,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.018377304, y: 0.017855482, z: 0.0017711977}
-  m_Center: {x: -0.0004867646, y: 0.00046900692, z: 0.010740277}
+  m_Size: {x: 0.01995406, y: 0.019980833, z: 0.0023033055}
+  m_Center: {x: -0.0000743523, y: -0.0006207152, z: 0.011006392}
 --- !u!54 &8259019157633502397
 Rigidbody:
   m_ObjectHideFlags: 0

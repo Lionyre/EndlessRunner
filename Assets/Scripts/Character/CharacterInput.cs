@@ -82,10 +82,12 @@ public class CharacterInput : MonoBehaviour
         {
             _characterFX.JumpAnim(true);
             transform.position = new Vector3(gameObject.transform.position.x,4,gameObject.transform.position.z);
+            ColliderCharacter.GetComponent<CapsuleCollider>().direction = 2;
         }
         else if(TimerSaut <= 0)
         {
             _characterFX.JumpAnim(false);
+            ColliderCharacter.GetComponent<CapsuleCollider>().direction = 1;
             // TP perso
             // transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
