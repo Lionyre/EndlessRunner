@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
         ScorePlayer.text = Score.ToString("000000");
     }
 
+
     void MoreScore()
     {
         if(TouchTheObject == true)

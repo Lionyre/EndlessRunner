@@ -57,9 +57,9 @@ public class generationProcedurale : MonoBehaviour
                 EmplacementPiece = Random.Range(0,3);
             }
             ChoixDispositionSpawn = Random.Range(1,4);
-            ChoixRandomA = Random.Range(0,3);
-            ChoixRandomB = Random.Range(0,3);
-            LesObjects = Random.Range(0,3);
+            ChoixRandomA = Random.Range(0,_ObjectForSpawn.Capacity);
+            ChoixRandomB = Random.Range(0,_ObjectForSpawn.Capacity);
+            LesObjects = Random.Range(0,_ObjectForSpawn.Capacity);
             Instantiate(PrefabRoad, PointSpawn.transform);
             TimerSpawnRoad = TimerSpawnRoute / ManagerVitesse.GetComponent<GameManager>().Vitesse;
         }
@@ -106,7 +106,7 @@ public class generationProcedurale : MonoBehaviour
             case 2:
             if(TimerSpawn > 0)
             {
-                Instantiate(_ObjetDansLongueur[0], _Spawn[1]);
+                Instantiate(_ObjetDansLongueur[Random.Range(0,_ObjetDansLongueur.Capacity)], _Spawn[1]);
             }
             break;
             case 3:
