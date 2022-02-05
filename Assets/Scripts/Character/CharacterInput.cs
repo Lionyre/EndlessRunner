@@ -21,6 +21,7 @@ public class CharacterInput : MonoBehaviour
     public bool IsSliding;
     [SerializeField] private CharacterFX _characterFX = null;
     [SerializeField] private InputInRythm RythmPress;
+    [SerializeField] private GameManager managerscore;
 
     private void Start() 
     {
@@ -43,6 +44,7 @@ public class CharacterInput : MonoBehaviour
         MovementCharacter();
         JumpCharacter();
         SlideCharacter();
+        MultiplicationScore();
     }
 
     void MovementCharacter()
@@ -159,6 +161,18 @@ public class CharacterInput : MonoBehaviour
             ColliderCharacter.SetActive(true);
             _characterFX.SlidAnim(false);
             // CharacterMesh.transform.localScale = new Vector3(1,1,1); 
+        }
+    }
+
+    void MultiplicationScore()
+    {
+        if(RythmPress.CanPress == true && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+        {
+            managerscore.multiplicateur += 0.1f;
+        }
+        else if(RythmPress.CanPress == false && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+        {
+            managerscore.multiplicateur = 1f;
         }
     }
 

@@ -25,7 +25,7 @@ public class Coin : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Player")
         {
-            TheScore.GetComponent<GameManager>().Score += 15;
+            TheScore.GetComponent<GameManager>().Score += 15 * TheScore.GetComponent<GameManager>().multiplicateur;
             _characterFX.CoinFX();
             Destroy(this.gameObject);
         }
