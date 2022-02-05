@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour
         PlayerIsDead();
         MoreScore();
         ShowMultiplicateur();
+        if(multiplicateur >= 4)
+        {
+            multiplicateur = 4;
+        }
     }
 
     void PlayerIsDead()
