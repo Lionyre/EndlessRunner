@@ -12,6 +12,7 @@ public class generationProcedurale : MonoBehaviour
     public List<Transform> _Spawn = new List<Transform>();
     public List<Transform> _SpawnCoin = new List<Transform>();
     public List<GameObject> _ObjectForSpawn = new List<GameObject>();
+    public List<GameObject> _ObjetDansLongueur = new List<GameObject>();
     public int LeSpawn;
     public int LesObjects;
     private float TimerSpawn;
@@ -50,15 +51,15 @@ public class generationProcedurale : MonoBehaviour
             coinCanBePlace = Random.Range(0,2);
             TimerSpawn = 0.001f;
             SpawnPiece = 0.001f;
-            LeSpawn = Random.Range(0,3);
+            LeSpawn = Random.Range(0,4);
             if(LeSpawn == 0 || LeSpawn == 2)
             {
                 EmplacementPiece = Random.Range(0,3);
             }
             ChoixDispositionSpawn = Random.Range(1,4);
-            ChoixRandomA = Random.Range(0,2);
-            ChoixRandomB = Random.Range(0,2);
-            LesObjects = Random.Range(0,2);
+            ChoixRandomA = Random.Range(0,_ObjectForSpawn.Capacity);
+            ChoixRandomB = Random.Range(0,_ObjectForSpawn.Capacity);
+            LesObjects = Random.Range(0,_ObjectForSpawn.Capacity);
             Instantiate(PrefabRoad, PointSpawn.transform);
             TimerSpawnRoad = TimerSpawnRoute / ManagerVitesse.GetComponent<GameManager>().Vitesse;
         }
@@ -105,7 +106,13 @@ public class generationProcedurale : MonoBehaviour
             case 2:
             if(TimerSpawn > 0)
             {
-                
+                Instantiate(_ObjetDansLongueur[Random.Range(0,_ObjetDansLongueur.Capacity)], _Spawn[1]);
+            }
+            break;
+            case 3:
+            if(TimerSpawn > 0)
+            {
+
             }
             break;
         }

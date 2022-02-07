@@ -19,9 +19,9 @@ public class CharacterInput : MonoBehaviour
 
     [SerializeField] private RaycastScript _Raycastscript;
     public bool IsSliding;
-    private float TimerDéplacement;
-    [SerializeField] private float CooldownDeplacement;
     [SerializeField] private CharacterFX _characterFX = null;
+    [SerializeField] private InputInRythm RythmPress;
+    [SerializeField] private GameManager managerscore;
 
     private void Start() 
     {
@@ -32,7 +32,6 @@ public class CharacterInput : MonoBehaviour
     {
         TimerSaut -= Time.deltaTime;
         TempsSlider -= Time.deltaTime;
-        TimerDéplacement -= Time.deltaTime;
         if(TempsSlider <= 0)
         {
             TempsSlider = 0f;
@@ -42,35 +41,30 @@ public class CharacterInput : MonoBehaviour
         {
             TimerSaut = 0f;
         }
-        if(TimerDéplacement <= 0)
-        {
-            TimerDéplacement = 0f;
-        }
         MovementCharacter();
         JumpCharacter();
         SlideCharacter();
+        MultiplicationScore();
     }
 
     void MovementCharacter()
     {  
-        if(Input.GetKeyDown(KeyCode.Q) && transform.position.x >= -3 && TimerDéplacement <= 0)
+        if(Input.GetKeyDown(KeyCode.Q) && transform.position.x >= -3 && RythmPress.CanPress == true)
         {
             _characterFX.DashFX();
             transform.position += new Vector3(-4,0,0);
-            TimerDéplacement = CooldownDeplacement;
         }
-        if(Input.GetKeyDown(KeyCode.D) && transform.position.x <= 3 && TimerDéplacement <= 0)
+        if(Input.GetKeyDown(KeyCode.D) && transform.position.x <= 3 && RythmPress.CanPress == true)
         {
             _characterFX.DashFX();
             transform.position += new Vector3(4,0,0);
-            TimerDéplacement = CooldownDeplacement;
         }
 
     }
 
     void JumpCharacter()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && TimerSaut <= 0 && IsSliding == false)
+        if(Input.GetKeyDown(KeyCode.Space) && TimerSaut <= 0 && IsSliding == false && RythmPress.CanPress == true)
         {
             Jump = true;
             _characterFX.JumpFX();
@@ -90,10 +84,12 @@ public class CharacterInput : MonoBehaviour
         {
             _characterFX.JumpAnim(true);
             transform.position = new Vector3(gameObject.transform.position.x,4,gameObject.transform.position.z);
+            ColliderCharacter.GetComponent<CapsuleCollider>().direction = 2;
         }
         else if(TimerSaut <= 0)
         {
             _characterFX.JumpAnim(false);
+            ColliderCharacter.GetComponent<CapsuleCollider>().direction = 1;
             // TP perso
             // transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
@@ -126,18 +122,16 @@ public class CharacterInput : MonoBehaviour
 
     void SlideCharacter()
     {
-        if(Input.GetKeyDown(KeyCode.S) && TempsSlider <= 0 && TimerDéplacement <= 0)
+        if(Input.GetKeyDown(KeyCode.S) && TempsSlider <= 0 && RythmPress.CanPress == true)
         {
             Slide = true;
-            TimerDéplacement = CooldownDeplacement;
             _characterFX.SlidAnim(true);
         }
-        else if(Input.GetKeyUp(KeyCode.Space) && _Raycastscript.TouchingGround == true && TimerDéplacement <= 0)
+        else if(Input.GetKeyUp(KeyCode.Space) && _Raycastscript.TouchingGround == true && RythmPress.CanPress == true)
         {
             Slide = false;
             TempsSlider = 0f;
             TimerSaut = TempsDuSaut;
-            TimerDéplacement = CooldownDeplacement;
             _characterFX.JumpFX();
             _characterFX.JumpAnim(true);
         }
@@ -167,6 +161,18 @@ public class CharacterInput : MonoBehaviour
             ColliderCharacter.SetActive(true);
             _characterFX.SlidAnim(false);
             // CharacterMesh.transform.localScale = new Vector3(1,1,1); 
+        }
+    }
+
+    void MultiplicationScore()
+    {
+        if(RythmPress.CanPress == true && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+        {
+            managerscore.multiplicateur += 0.1f;
+        }
+        else if(RythmPress.CanPress == false && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+        {
+            managerscore.multiplicateur = 1f;
         }
     }
 

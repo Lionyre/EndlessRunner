@@ -1293,6 +1293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3539944327898883521, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
+      propertyPath: Coin
+      value: 
+      objectReference: {fileID: 3824481894210118474, guid: 0e0b624b6bd033f4796b7aeffdd25388, type: 3}
     - target: {fileID: 3539944327898883526, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -9,6 +9,7 @@ public class RaycastScript : MonoBehaviour
     private GameObject LastHit;
     public LayerMask layer;
     public bool TouchingGround;
+    public float LongueurRaycast;
     
 
     // Update is called once per frame
@@ -16,7 +17,7 @@ public class RaycastScript : MonoBehaviour
     {
         var ray = new Ray((this.transform.position + new Vector3(0,-0.80f,0)), -transform.up);
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit,0.1f))
+        if(Physics.Raycast(ray, out hit,LongueurRaycast))
         {
             LastHit = hit.transform.gameObject;
             DistanceLigne = hit.point;
