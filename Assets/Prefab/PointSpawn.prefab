@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5593a88e396a52148bfd6039bf359049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimerSpawnRoad: 0.49
+  TimerSpawnRoad: 1.5
   TimerSpawnRoute: 22
   PrefabRoad: {fileID: 8760002478426240972, guid: e4ca4733cf794fb458273a8b78152e63, type: 3}
   PointSpawn: {fileID: 3539944327898883527}
@@ -184,6 +184,13 @@ MonoBehaviour:
   _ObjectForSpawn:
   - {fileID: 1496303685406951504, guid: e253b08714504f14d896d72ef56df660, type: 3}
   - {fileID: 2866397077483564870, guid: 08ef79ce3192d8b448b23ed540407b71, type: 3}
+  - {fileID: 8541120518954348306, guid: 29aad6c606ab3b94fb47e3413a94ae72, type: 3}
+  - {fileID: 7227680240049477987, guid: 43ea5a49b7060004f9c90a8c282068c9, type: 3}
+  - {fileID: 702730552657533453, guid: 79eab5a5a8d30444386d6ede4c057df4, type: 3}
+  - {fileID: 5331889091866555875, guid: 02b4f81997ce139479dbe17c179f4462, type: 3}
+  _ObjetDansLongueur:
+  - {fileID: 1260928953722707226, guid: b1a3b49382cdb5749a69f5cc13e8930e, type: 3}
+  - {fileID: 1655453820499716656, guid: 2267e22cfbd487f4ca61288a9d85306f, type: 3}
   LeSpawn: 0
   LesObjects: 0
   ChoixDispositionSpawn: 0

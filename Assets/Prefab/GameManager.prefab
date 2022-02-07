@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 913515905893743674}
   - component: {fileID: 913515905893743673}
+  - component: {fileID: 788374940}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,9 +45,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 0
-  Vitesse: 5
+  Vitesse: 10
   ScorePlayer: {fileID: 0}
   BoolSliding: {fileID: 0}
   Collider: {fileID: 0}
   ColliderSlide: {fileID: 0}
   StopGeneration: {fileID: 0}
+  multiplicateur: 1
+  MultiplicateurText: {fileID: 0}
+--- !u!114 &788374940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913515905893743672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30924bb042742c5448da159e529be369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BPM: 90
+  TimerPressInput: 0
+  CanPress: 0
+  PrefabRythmRight: {fileID: 2135194979910395503, guid: d1267af4a7cec2f4dbc8769a66d8a7b5, type: 3}
+  PrefabRythmLeft: {fileID: 2930125308836997767, guid: d4e0e72fdf2adca41a6e5b8ebd1316e6, type: 3}
+  SpawnRight: {fileID: 0}
+  SpawnLeft: {fileID: 0}
+  SunRythm: {fileID: 0}
+  _animatorMidle: {fileID: 0}
