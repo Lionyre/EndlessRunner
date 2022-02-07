@@ -686,6 +686,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7851373675604454732, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7851373675716632640, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_fontColor.a
       value: 1
@@ -1488,10 +1492,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1164688650307147769, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3863944315137985313, guid: 5aa08366931475d4780ac58d676db213, type: 3}
       propertyPath: _characterFX
       value: 
       objectReference: {fileID: 1439123821}
+    - target: {fileID: 4702703049284266603, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: _echo
+      value: 
+      objectReference: {fileID: 1580553079}
     - target: {fileID: 4702703049284266603, guid: 5aa08366931475d4780ac58d676db213, type: 3}
       propertyPath: _canvas
       value: 
@@ -1783,6 +1795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+--- !u!1 &1580553079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1544050348103404096, guid: 2ec090ca99b70364db61a8c210f482bd, type: 3}
+  m_PrefabInstance: {fileID: 2017380581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1581260169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,6 +2106,10 @@ PrefabInstance:
     - target: {fileID: 1544050348103404096, guid: 2ec090ca99b70364db61a8c210f482bd, type: 3}
       propertyPath: m_Name
       value: Echo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544050348103404096, guid: 2ec090ca99b70364db61a8c210f482bd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1544050348103404097, guid: 2ec090ca99b70364db61a8c210f482bd, type: 3}
       propertyPath: m_RootOrder

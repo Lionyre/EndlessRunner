@@ -9,12 +9,12 @@ public class CharacterRenderer : MonoBehaviour
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private CinemachineVirtualCamera[] _cinemachineCameras;
     public PlayableDirector _playbleDirector;
-    public GameObject _canvas, _rythmBar;
+    public GameObject _canvas, _rythmBar, _echo;
 
-    // private void Start() 
-    // {
-    //     StartRunning();
-    // }
+    private void Start() 
+    {
+        Time.timeScale = 0;
+    }
 
     public void StartRunning()
     {
@@ -22,6 +22,8 @@ public class CharacterRenderer : MonoBehaviour
         _playbleDirector.Play();
         _canvas.SetActive(true);
         _rythmBar.SetActive(true);
+        _echo.SetActive(true);
+        Time.timeScale = 1;
     }
 
     public void SetJumpBool(bool isJumping)
