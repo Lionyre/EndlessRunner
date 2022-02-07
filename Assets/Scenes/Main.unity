@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.251922, g: 0.2563373, b: 0.32889363, a: 1}
+  m_IndirectSpecularColor: {r: 0.2499061, g: 0.2543386, b: 0.32737672, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1488,6 +1488,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3863944314829851606, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: LongueurRaycast
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863944315137985312, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863944315137985312, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863944315137985312, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3863944315137985313, guid: 5aa08366931475d4780ac58d676db213, type: 3}
       propertyPath: _characterFX
       value: 
