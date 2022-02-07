@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 6f1ca590db8eb484ea38b3641d426d7d
+guid: 26e5f5f29bc3ded4eb2b3429965ea84c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: d567321e67e5d4646911d9a0b8ded1a4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Tronc
-    second: {fileID: 2100000, guid: e1f48cf4c0681054c9f5ec0c55608982, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
