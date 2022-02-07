@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BaseColor
-    second: {fileID: 2100000, guid: 58bb2b9291b5a664295c300e6afbf110, type: 2}
+    second: {fileID: 2100000, guid: e1f48cf4c0681054c9f5ec0c55608982, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bloom1
-    second: {fileID: 2100000, guid: bdb6c853a7a2b2341ba41ed5891c190d, type: 2}
+    second: {fileID: 2100000, guid: f85e2cb0e073f1c408320662b0a8510a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bloom2
-    second: {fileID: 2100000, guid: 54619d97dedc3c94880712494e30eabd, type: 2}
+    second: {fileID: 2100000, guid: 49fb4f7e8db1db3498d743a3c53c9e5a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

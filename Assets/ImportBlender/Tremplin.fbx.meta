@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TremplinBase
-    second: {fileID: 2100000, guid: 6e24c99cb2ebb0141aa21756d51a944f, type: 2}
+    second: {fileID: 2100000, guid: e1f48cf4c0681054c9f5ec0c55608982, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TremplinFleche
-    second: {fileID: 2100000, guid: 21f5c969d560cdc468536ff279eacb1a, type: 2}
+    second: {fileID: 2100000, guid: 49fb4f7e8db1db3498d743a3c53c9e5a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "TremplinN\xE9on"
-    second: {fileID: 2100000, guid: 10c65de67a02daf4aa6f4dacba91a746, type: 2}
+    second: {fileID: 2100000, guid: f85e2cb0e073f1c408320662b0a8510a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

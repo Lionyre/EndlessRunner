@@ -3,7 +3,22 @@ guid: 7afcdba43cd867d43a4abc2098cb7570
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TremplinBase
+    second: {fileID: 2100000, guid: e1f48cf4c0681054c9f5ec0c55608982, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TremplinFleche
+    second: {fileID: 2100000, guid: 49fb4f7e8db1db3498d743a3c53c9e5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "TremplinN\xE9on"
+    second: {fileID: 2100000, guid: f85e2cb0e073f1c408320662b0a8510a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
