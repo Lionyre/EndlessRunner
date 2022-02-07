@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
     private FrontRaycast TouchingObject;
     private bool TouchTheObject;
     private GameObject BlazingSun;
+    public float multiplicateur;
+    [SerializeField] private TMP_Text MultiplicateurText;
 
 
     private void Start() {
@@ -30,6 +33,11 @@ public class GameManager : MonoBehaviour
     {
         PlayerIsDead();
         MoreScore();
+        ShowMultiplicateur();
+        if(multiplicateur >= 4)
+        {
+            multiplicateur = 4;
+        }
     }
 
     void PlayerIsDead()
@@ -48,7 +56,7 @@ public class GameManager : MonoBehaviour
 
         if(ContactFromCharacter.IsDead == false)
         {
-            Vitesse += Time.fixedDeltaTime * 0.5f;
+            //Vitesse += Time.fixedDeltaTime * 0.5f;
         }
         else if(ContactFromCharacter.IsDead == true)
         {
@@ -65,11 +73,17 @@ public class GameManager : MonoBehaviour
         ScorePlayer.text = Score.ToString("000000");
     }
 
+    void ShowMultiplicateur()
+    {
+        MultiplicateurText.text = multiplicateur.ToString("x0.0");
+    }
+
+
     void MoreScore()
     {
         if(TouchTheObject == true)
         {
-            Score += 1;
+            Score += 1 * multiplicateur;
         }
     }
 
