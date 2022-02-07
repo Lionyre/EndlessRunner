@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.251922, g: 0.2563373, b: 0.32889363, a: 1}
+  m_IndirectSpecularColor: {r: 0.3870331, g: 0.39151636, b: 0.44169804, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1188,6 +1188,10 @@ PrefabInstance:
       propertyPath: m_Path
       value: 
       objectReference: {fileID: 1919980989}
+    - target: {fileID: 6892997067380229337, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_PathPosition
+      value: 2.92
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
 --- !u!114 &974573336 stripped
@@ -1416,15 +1420,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6844417274261142686, guid: ab5c494928c289245baeebb4091aa0e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8847597
+      value: -1.9930766
       objectReference: {fileID: 0}
     - target: {fileID: 6844417274261142686, guid: ab5c494928c289245baeebb4091aa0e0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6567211
+      value: 5.152224
       objectReference: {fileID: 0}
     - target: {fileID: 6844417274261142686, guid: ab5c494928c289245baeebb4091aa0e0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8585115
+      value: -6.2580814
       objectReference: {fileID: 0}
     - target: {fileID: 6844417274261142686, guid: ab5c494928c289245baeebb4091aa0e0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1836,6 +1840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1919219433784318532, guid: 097c471b9f7a9e54288dd8e2984a7ef8, type: 3}
+      propertyPath: m_FrequencyGain
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1919219435339169296, guid: 097c471b9f7a9e54288dd8e2984a7ef8, type: 3}
       propertyPath: m_Follow
       value: 
