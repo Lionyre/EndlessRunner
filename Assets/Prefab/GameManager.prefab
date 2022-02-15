@@ -74,3 +74,7 @@ MonoBehaviour:
   SpawnLeft: {fileID: 0}
   SunRythm: {fileID: 0}
   _animatorMidle: {fileID: 0}
+  OnRytm: 0
+  BarRythm: {fileID: 0}
+  managermultiplicateur: {fileID: 913515905893743673}
+  WindowPress: 0.2

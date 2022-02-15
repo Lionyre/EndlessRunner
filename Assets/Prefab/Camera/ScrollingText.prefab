@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tmpComponent: {fileID: 0}
+  _tmpSecondaryComponent: {fileID: 0}
