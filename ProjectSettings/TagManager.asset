@@ -7,6 +7,7 @@ TagManager:
   - DestroyCoin
   - Obstacle
   - Danger
+  - Anneau
   layers:
   - Default
   - TransparentFX

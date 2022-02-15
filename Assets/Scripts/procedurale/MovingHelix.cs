@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MovingHelix : MonoBehaviour
 {
-    public float speed;
+    public float MaxSpeed;
+    public float MinSpeed;
     public bool isMovingLeft = true;
     
     void Start()
@@ -17,7 +18,7 @@ public class MovingHelix : MonoBehaviour
     {
         if (isMovingLeft == true)
         {
-            gameObject.transform.position -= new Vector3(speed, 0, 0);
+            gameObject.transform.position -= new Vector3(Random.Range(MinSpeed, MaxSpeed), 0, 0);
             if(gameObject.transform.position.x < -5)
             {
                 isMovingLeft = false;
@@ -27,7 +28,7 @@ public class MovingHelix : MonoBehaviour
         }
         if( isMovingLeft == false)
         {
-                gameObject.transform.position += new Vector3(speed, 0, 0);
+                gameObject.transform.position += new Vector3(Random.Range(MinSpeed, MaxSpeed), 0, 0);
                 if(gameObject.transform.position.x > 5)
                 {
                     isMovingLeft = true;

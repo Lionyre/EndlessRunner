@@ -13,21 +13,41 @@ public class InputInRythm : MonoBehaviour
     public GameObject SpawnLeft;
     [SerializeField] private BlazingSun SunRythm;
     [SerializeField] private Animator _animatorMidle;
+    public bool OnRytm;
+    [SerializeField] private GameObject BarRythm;
+    [SerializeField] private GameManager managermultiplicateur;
+    private float PlayOnce;
+    public float WindowPress;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    
 
-        StartCoroutine("RythmFunction");
-    }
-    private void Awake() {
+    private void Start() {
         CanPress = false;
+        //StartCoroutine("RythmFunction");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         TimerPressInput = 60/BPM;
+
+        if(OnRytm == false)
+        {
+            BarRythm.SetActive(false);
+            StopCoroutine("RythmFunction");
+            CanPress = true;
+            managermultiplicateur.multiplicateur = 1f;
+            PlayOnce = 0;
+        }
+        else if(OnRytm == true)
+        {
+            PlayOnce += Time.deltaTime;
+            if(PlayOnce < 0.03)
+            {
+                StartCoroutine("RythmFunction");
+            }
+            BarRythm.SetActive(true);
+        }
     }
 
     void BPMmusic()
@@ -58,7 +78,7 @@ public class InputInRythm : MonoBehaviour
         yield return new WaitForSeconds(0.001f);
         _animatorMidle.SetBool("Beat",false);
         Debug.Log("CanBePress");
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(WindowPress);
         CanPress = false;
         }
     }
