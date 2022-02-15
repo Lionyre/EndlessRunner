@@ -326,6 +326,10 @@ PrefabInstance:
       propertyPath: _tmpComponent
       value: 
       objectReference: {fileID: 521061016}
+    - target: {fileID: 2313575999302510515, guid: dd192591ee75f8a49a7a7a3f48708cc2, type: 3}
+      propertyPath: _tmpSecondaryComponent
+      value: 
+      objectReference: {fileID: 693150283}
     - target: {fileID: 2313575999302510524, guid: dd192591ee75f8a49a7a7a3f48708cc2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -464,6 +468,10 @@ PrefabInstance:
       value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 4702703049453874783, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702703049453874783, guid: 5aa08366931475d4780ac58d676db213, type: 3}
       propertyPath: RythmPress
       value: 
       objectReference: {fileID: 115529954}
@@ -499,7 +507,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 346560546}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346560553}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68eb5e339088c5040a89e49b0daa3ec9, type: 3}
   m_Name: 
@@ -841,12 +849,52 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 346560548}
     - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 346560549}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartRunning
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674590000752, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_text
+      value: 'Music : Karl Casey @ White Bat Audio - Wrathchild'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373674590000754, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_Name
+      value: MusicText
       objectReference: {fileID: 0}
     - target: {fileID: 7851373674590000755, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_SizeDelta.x
@@ -944,6 +992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas-Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 7851373675604454720, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -46.099976
+      objectReference: {fileID: 0}
     - target: {fileID: 7851373675604454721, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -959,6 +1011,10 @@ PrefabInstance:
     - target: {fileID: 7851373675716632640, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851373675747141976, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+      propertyPath: m_Name
+      value: MusicText (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7851373675747141977, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1220,6 +1276,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4821693340906535580, guid: 09cde3b4eebd91043b7b98acec8da2a6, type: 3}
   m_PrefabInstance: {fileID: 556505337}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &693150283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7851373675747142055, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
+  m_PrefabInstance: {fileID: 521061014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &992206807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1227,6 +1294,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.1186194
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.3177204
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.53250337
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.53250337
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.46523136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.46523136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892997066638316098, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 6892997066638316099, guid: d02370555906e154482ca9e1c3d85cc4, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1850,6 +1949,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 434586505, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 434586505, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434586505, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197407620, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_Name
+      value: Karl Casey @ White Bat Audio - The Wait
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197407622, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197407622, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197407622, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650874129, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_Name
+      value: Karl Casey @ White Bat Audio - Wrathchild
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650874131, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1642982603992327648, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
       propertyPath: m_Name
       value: Prefab_BlazingSun

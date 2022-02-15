@@ -59,7 +59,6 @@ public class CharacterInput : MonoBehaviour
             _characterFX.DashFX();
             transform.position += new Vector3(4,0,0);
         }
-
     }
 
     void JumpCharacter()

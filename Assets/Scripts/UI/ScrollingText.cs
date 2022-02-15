@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScrollingText : MonoBehaviour
 {
-    public TextMeshProUGUI _tmpComponent;
+    public TextMeshProUGUI _tmpComponent, _tmpSecondaryComponent;
     private RectTransform _textRectTransform;
     private string sourceText;
     private BlazingSun _blazingSun;
@@ -20,5 +20,6 @@ public class ScrollingText : MonoBehaviour
     {
         sourceText = "Music : " + _blazingSun._source[_blazingSun._musicIndex].gameObject.name;
         _tmpComponent.SetText(sourceText);
+        _tmpSecondaryComponent.SetText(sourceText);
     }
 }

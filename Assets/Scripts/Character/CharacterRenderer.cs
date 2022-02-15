@@ -10,10 +10,17 @@ public class CharacterRenderer : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera[] _cinemachineCameras;
     public PlayableDirector _playbleDirector;
     public GameObject _canvas, _rythmBar, _echo;
+    public bool pause, gameIsRunning;
 
     private void Start() 
     {
-        Time.timeScale = 0;
+        Time.timeScale = 0;   
+        gameIsRunning = false;
+    }
+
+    private void Update() 
+    {
+        PauseGame();
     }
 
     public void StartRunning()
@@ -23,7 +30,27 @@ public class CharacterRenderer : MonoBehaviour
         _canvas.SetActive(true);
         _rythmBar.SetActive(true);
         _echo.SetActive(true);
+        gameIsRunning = true;
         Time.timeScale = 1;
+    }
+
+    public void PauseGame()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape) && gameIsRunning == true)
+        {
+            if(pause == false)
+            {
+                pause = true;
+                Time.timeScale = 0;
+                _playerAnimator.SetBool("_run", false);
+            }
+            else
+            {
+                pause = false;
+                _playerAnimator.SetBool("_run", true);
+                Time.timeScale = 1;
+            }
+        }
     }
 
     public void SetJumpBool(bool isJumping)
