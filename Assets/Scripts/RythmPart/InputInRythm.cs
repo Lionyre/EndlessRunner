@@ -15,6 +15,7 @@ public class InputInRythm : MonoBehaviour
     [SerializeField] private Animator _animatorMidle;
     public bool OnRytm;
     [SerializeField] private GameObject BarRythm;
+    [SerializeField] private GameManager managermultiplicateur;
     private float PlayOnce;
     public float WindowPress;
 
@@ -35,6 +36,7 @@ public class InputInRythm : MonoBehaviour
             BarRythm.SetActive(false);
             StopCoroutine("RythmFunction");
             CanPress = true;
+            managermultiplicateur.multiplicateur = 1f;
             PlayOnce = 0;
         }
         else if(OnRytm == true)

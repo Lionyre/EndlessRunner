@@ -1747,7 +1747,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: OnRytm
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: BarRythm
@@ -1777,6 +1777,10 @@ PrefabInstance:
       propertyPath: _animatorMidle
       value: 
       objectReference: {fileID: 37078483}
+    - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+      propertyPath: managermultiplicateur
+      value: 
+      objectReference: {fileID: 842591621}
     - target: {fileID: 913515905893743672, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: m_Name
       value: GameManager
