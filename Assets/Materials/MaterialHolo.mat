@@ -10,7 +10,7 @@ Material:
   m_Name: MaterialHolo
   m_Shader: {fileID: -6465566751694194690, guid: f547fde4ccf4bdf40839f35a1aa1347b, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_f08c73fa480446c1b954270b3a1e1f98:
         m_Texture: {fileID: 2800000, guid: 0b0a18d1a63be7b45866211f19c52e1d, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -67,6 +71,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texture:
+        m_Texture: {fileID: 2800000, guid: 0b0a18d1a63be7b45866211f19c52e1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -108,6 +116,7 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - unscaleTime: 0
     m_Colors:
     - Color_8644d913323e40c0af3f1c5e4945fa12: {r: 101.54135, g: 1.0747589, b: 170.89003, a: 0}
     - Color_b7f876b28de64b18bc823beed88287fe: {r: 11.984314, g: 0.1882353, b: 0.4392157, a: 0}

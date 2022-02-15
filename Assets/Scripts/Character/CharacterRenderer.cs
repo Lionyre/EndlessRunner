@@ -11,6 +11,7 @@ public class CharacterRenderer : MonoBehaviour
     public PlayableDirector _playbleDirector;
     public GameObject _canvas, _rythmBar, _echo;
     public bool pause, gameIsRunning;
+    public GameObject _pauseCanvas;
 
     private void Start() 
     {
@@ -41,16 +42,26 @@ public class CharacterRenderer : MonoBehaviour
             if(pause == false)
             {
                 pause = true;
+                _pauseCanvas.SetActive(true);
                 Time.timeScale = 0;
                 _playerAnimator.SetBool("_run", false);
             }
             else
             {
                 pause = false;
+                _pauseCanvas.SetActive(false);
                 _playerAnimator.SetBool("_run", true);
                 Time.timeScale = 1;
             }
         }
+    }
+
+    public void StopPause()
+    {
+        pause = false;
+        _pauseCanvas.SetActive(false);
+        _playerAnimator.SetBool("_run", true);
+        Time.timeScale = 1;
     }
 
     public void SetJumpBool(bool isJumping)

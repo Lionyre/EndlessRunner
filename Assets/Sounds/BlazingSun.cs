@@ -22,6 +22,7 @@ public class BlazingSun : MonoBehaviour
     private Transform[] _visualList;
     private float[] _visualScale;
     public int _musicIndex;
+    public bool _inCircle = true;
     
 
     private void Start() 
@@ -30,8 +31,16 @@ public class BlazingSun : MonoBehaviour
         _samples = new float[_samplSize];
         _spectrum = new float[_samplSize];
         _sampleRate = AudioSettings.outputSampleRate;
-        // SpawnLine();
-        SpawnCircle();
+
+        if(_inCircle == true)
+        {
+            SpawnCircle();
+        }
+        else
+        {
+            SpawnLine();
+        }
+        
         _source[_musicIndex].enabled = true;
     }
 
@@ -106,16 +115,15 @@ public class BlazingSun : MonoBehaviour
 
         for(int i = 0; i < _amnVisual; i++)
         {
-            GameObject sunObject = GameObject.CreatePrimitive(PrimitiveType.Cube) as GameObject;
+            GameObject sunObject = Instantiate(_blazingSunPrefab, gameObject.transform) as GameObject;
             _visualList[i] = sunObject.transform;
-            _visualList[i].position = Vector3.right * i;
+            _visualList[i].position = Vector3.forward * i;
         }
     }
     private void AnalyzeSound(int musicIndex)
     {
         _source[musicIndex].GetOutputData(_samples, 0);
 
-        
         float sum = 0;
 
         for(int i = 0; i < _samplSize; i++)

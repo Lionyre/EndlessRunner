@@ -66,8 +66,7 @@ public class GameManager : MonoBehaviour
             BoolSliding.enabled = false;
             if(BeforeReload <= 0)
             {
-                Scene scene = SceneManager.GetActiveScene(); 
-                SceneManager.LoadScene(scene.name);
+                ReloadScene();
             }
         }
         ScorePlayer.text = Score.ToString("000000");
@@ -76,6 +75,12 @@ public class GameManager : MonoBehaviour
     void ShowMultiplicateur()
     {
         MultiplicateurText.text = multiplicateur.ToString("x0.0");
+    }
+
+    public void ReloadScene()
+    {
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
     }
 
 
