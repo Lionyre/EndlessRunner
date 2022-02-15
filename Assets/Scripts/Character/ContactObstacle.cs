@@ -16,6 +16,7 @@ public class ContactObstacle : MonoBehaviour
         }
         else if(other.gameObject.tag == "Obstacle")
         {
+            Destroy(other.gameObject);
             Vie -= 1;
             _characterFX.DamageFX();
         }

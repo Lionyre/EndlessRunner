@@ -19,9 +19,9 @@ public class DescendreCollider : MonoBehaviour
         {
             this.gameObject.transform.position -= new Vector3(0,0.1f,0);
         }
-        // if(transform.position.y <= -0.06f)
-        // {
+        //  if(transform.position.y <= -0.06f)
+        //  {
         //     transform.position = new Vector3(transform.position.x,0,transform.position.z);
-        // }
+        //  }
     }
 }

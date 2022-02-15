@@ -1534,6 +1534,18 @@ PrefabInstance:
       propertyPath: m_UpdateMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3863944315137985312, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863944315137985312, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863944315137985312, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3863944315137985313, guid: 5aa08366931475d4780ac58d676db213, type: 3}
       propertyPath: _characterFX
       value: 
@@ -1745,7 +1757,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: OnRytm
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: BarRythm
