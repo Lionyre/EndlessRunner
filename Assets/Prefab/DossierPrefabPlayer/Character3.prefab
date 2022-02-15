@@ -48678,6 +48678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsDead: 0
   _characterFX: {fileID: 4702703049372606900}
+  inputChara: {fileID: 4702703049453874783}
 --- !u!54 &7078595730765555039
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -68160,6 +68161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsDead: 0
   _characterFX: {fileID: 4702703049372606900}
+  inputChara: {fileID: 4702703049453874783}
 --- !u!54 &3863944315137985312
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -68175,7 +68177,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 122
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &3863944314829851606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73201,7 +73203,7 @@ MonoBehaviour:
   CharacterMesh: {fileID: 4702703049453874780}
   _Raycastscript: {fileID: 4702703049453874782}
   IsSliding: 0
-  _characterFX: {fileID: 0}
+  _characterFX: {fileID: 4702703049372606900}
   RythmPress: {fileID: 0}
   managerscore: {fileID: 0}
 --- !u!114 &4702703049453874782
@@ -73742,8 +73744,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAnimator: {fileID: 1164688650307147769}
-  _cinemachineCameras: []
+  _cinemachineCameras:
+  - {fileID: 0}
+  - {fileID: 0}
   _playbleDirector: {fileID: 0}
+  _canvas: {fileID: 0}
+  _rythmBar: {fileID: 0}
+  _echo: {fileID: 0}
+  pause: 0
+  gameIsRunning: 0
 --- !u!1001 &4702703049284266600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74887,6 +74896,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 4f07cc58b824bff4abb14efa65616659, type: 2}
+    - target: {fileID: 5866666021909216657, guid: c0901a4d87cb5f8409bd2159810728c0, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: c0901a4d87cb5f8409bd2159810728c0, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0

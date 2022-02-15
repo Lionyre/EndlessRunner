@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerSpawnRoad: 1.5
-  TimerSpawnRoute: 22
+  TimerSpawnRoute: 23.5
   PrefabRoad: {fileID: 8760002478426240972, guid: e4ca4733cf794fb458273a8b78152e63, type: 3}
   PointSpawn: {fileID: 3539944327898883527}
   _Spawn:
@@ -188,6 +188,7 @@ MonoBehaviour:
   - {fileID: 7227680240049477987, guid: 43ea5a49b7060004f9c90a8c282068c9, type: 3}
   - {fileID: 702730552657533453, guid: 79eab5a5a8d30444386d6ede4c057df4, type: 3}
   - {fileID: 5331889091866555875, guid: 02b4f81997ce139479dbe17c179f4462, type: 3}
+  - {fileID: 854650813040481509, guid: 5c5519a4a1e5aed448d7e3a9cb111d0f, type: 3}
   _ObjetDansLongueur:
   - {fileID: 1260928953722707226, guid: b1a3b49382cdb5749a69f5cc13e8930e, type: 3}
   - {fileID: 1655453820499716656, guid: 2267e22cfbd487f4ca61288a9d85306f, type: 3}
