@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.251922, g: 0.2563373, b: 0.32889363, a: 1}
+  m_IndirectSpecularColor: {r: 0.2499061, g: 0.2543386, b: 0.32737672, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,7 +140,15 @@ PrefabInstance:
       value: ScrollingText
       objectReference: {fileID: 0}
     - target: {fileID: 2313575999302510515, guid: dd192591ee75f8a49a7a7a3f48708cc2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313575999302510515, guid: dd192591ee75f8a49a7a7a3f48708cc2, type: 3}
       propertyPath: _tmpComponent
+      value: 
+      objectReference: {fileID: 334113921}
+    - target: {fileID: 2313575999302510515, guid: dd192591ee75f8a49a7a7a3f48708cc2, type: 3}
+      propertyPath: _tmpSecondaryComponent
       value: 
       objectReference: {fileID: 334113921}
     - target: {fileID: 2313575999302510524, guid: dd192591ee75f8a49a7a7a3f48708cc2, type: 3}
@@ -1736,6 +1744,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+      propertyPath: OnRytm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+      propertyPath: BarRythm
+      value: 
+      objectReference: {fileID: 164968461}
+    - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: SunRythm
       value: 
       objectReference: {fileID: 719846454}
@@ -1744,9 +1760,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 381166382}
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: SpawnRight
       value: 
       objectReference: {fileID: 1244374217}
+    - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+      propertyPath: WindowPress
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: _animatorMidle
       value: 
@@ -1755,6 +1779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 913515905893743673, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+      propertyPath: LeBool
+      value: 
+      objectReference: {fileID: 842591620}
     - target: {fileID: 913515905893743673, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: Collider
       value: 
