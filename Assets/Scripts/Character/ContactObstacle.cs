@@ -7,6 +7,7 @@ public class ContactObstacle : MonoBehaviour
     public bool IsDead;
     public CharacterFX _characterFX;
     private float Vie = 3;
+    [SerializeField] private CharacterInput inputChara;
 
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Danger")
@@ -19,6 +20,14 @@ public class ContactObstacle : MonoBehaviour
             Destroy(other.gameObject);
             Vie -= 1;
             _characterFX.DamageFX();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag == "Anneau")
+        {
+            Debug.Log("ToucheAnneau");
+            inputChara.TimerSaut += 1f;
         }
     }
 
