@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34780237, g: 0.35227102, b: 0.4075222, a: 1}
+  m_IndirectSpecularColor: {r: 0.28639832, g: 0.29087266, b: 0.35626522, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5727,6 +5727,10 @@ PrefabInstance:
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 3863944313646428649, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: LongueurRaycast
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3863944315072696932, guid: 5aa08366931475d4780ac58d676db213, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5859,6 +5863,22 @@ PrefabInstance:
       propertyPath: managerscore
       value: 
       objectReference: {fileID: 115529953}
+    - target: {fileID: 7078595730765555039, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078595730765555039, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078595730765555039, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078595730765555039, guid: 5aa08366931475d4780ac58d676db213, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aa08366931475d4780ac58d676db213, type: 3}
 --- !u!4 &346560547 stripped
@@ -5924,6 +5944,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0baa9246ebcb67244a12564d276e0044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &346560555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346560551}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9be89ce0c42164a9f16e14b1f7b7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &346632198
