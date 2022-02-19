@@ -34,11 +34,13 @@ public class GameManager : MonoBehaviour
         PlayerIsDead();
         MoreScore();
         ShowMultiplicateur();
+        VitesseSelonBPM();
         if(multiplicateur >= 4)
         {
             multiplicateur = 4;
         }
     }
+    
 
     void PlayerIsDead()
     {
@@ -97,16 +99,71 @@ public class GameManager : MonoBehaviour
         switch(BlazingSun.GetComponent<BlazingSun>()._musicIndex)
         {
             case 0:
-            
+                if(Vitesse < 9)
+                {
+                    Vitesse += Time.deltaTime / 2;
+                }
+                else if(Vitesse > 11)
+                {
+                    Vitesse -= Time.deltaTime / 2;
+                }
+                else
+                {
+                    Vitesse = 10;
+                }
+
             break;
 
 
             case 1:
 
+            if(Vitesse < 24)
+                {
+                    Vitesse += Time.deltaTime / 2;
+                }
+                else if(Vitesse > 26)
+                {
+                    Vitesse -= Time.deltaTime / 2;
+                }
+                else
+                {
+                    Vitesse = 25;
+                }
+
             break;
 
 
             case 2:
+
+            if(Vitesse < 34)
+                {
+                    Vitesse += Time.deltaTime / 2;
+                }
+                else if(Vitesse > 36)
+                {
+                    Vitesse -= Time.deltaTime / 2;
+                }
+                else
+                {
+                    Vitesse = 35;
+                }
+
+            break;
+
+            case 3:
+
+            if(Vitesse < 19)
+                {
+                    Vitesse += Time.deltaTime / 2;
+                }
+                else if(Vitesse > 21)
+                {
+                    Vitesse -= Time.deltaTime / 2;
+                }
+                else
+                {
+                    Vitesse = 20;
+                }
 
             break;
         }

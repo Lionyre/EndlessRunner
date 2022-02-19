@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34780237, g: 0.35227102, b: 0.4075222, a: 1}
+  m_IndirectSpecularColor: {r: 0.28639832, g: 0.29087266, b: 0.35626522, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -505,6 +505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
+      propertyPath: OnRytm
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 788374940, guid: 360ea4fd95bdd3a48b44dec895248326, type: 3}
       propertyPath: BarRythm
       value: 
@@ -1955,7 +1959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7851373675604454720, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -46.099976
+      value: -46.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7851373675604454721, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_Color.a
@@ -3797,6 +3801,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3824481894210118474, guid: 0e0b624b6bd033f4796b7aeffdd25388, type: 3}
     - target: {fileID: 3539944327898883521, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
+      propertyPath: TimerSpawnRoute
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539944327898883521, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
       propertyPath: _ObjectForSpawn.Array.data[0]
       value: 
       objectReference: {fileID: 1496303685406951504, guid: e253b08714504f14d896d72ef56df660, type: 3}
@@ -3818,7 +3826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3539944327898883526, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 101.83
+      value: 139.83
       objectReference: {fileID: 0}
     - target: {fileID: 3539944327898883526, guid: 3e87c43fa75f99c49aa1e2194d11ac0e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3909,7 +3917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -128.14, y: -108.92}
+  m_AnchoredPosition: {x: -128.13998, y: -108.92}
   m_SizeDelta: {x: 23.4, y: 16.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178375284
@@ -4639,7 +4647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -98.17, y: -126.12}
+  m_AnchoredPosition: {x: -98.17001, y: -126.119995}
   m_SizeDelta: {x: 24.41, y: 17.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541039083
@@ -4853,7 +4861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -133.2, y: -393.29}
+  m_AnchoredPosition: {x: -133.19998, y: -393.29}
   m_SizeDelta: {x: 45.09, y: 22.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1573813804
@@ -5106,6 +5114,10 @@ PrefabInstance:
     - target: {fileID: 1642982603992327648, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
       propertyPath: m_Name
       value: Prefab_BlazingSun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642982603992327650, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: _musicIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1642982603992327651, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
       propertyPath: m_RootOrder

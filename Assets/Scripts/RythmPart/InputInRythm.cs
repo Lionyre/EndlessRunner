@@ -29,6 +29,7 @@ public class InputInRythm : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        BPMmusic();
         TimerPressInput = 60/BPM;
 
         if(OnRytm == false)
@@ -55,12 +56,19 @@ public class InputInRythm : MonoBehaviour
         switch(SunRythm._musicIndex)
         {
             case 0:
+            BPM = 96;
             break;
 
             case 1:
+            BPM = 110;
             break;
 
             case 2:
+            BPM = 121;
+            break;
+
+            case 3:
+            BPM = 108;
             break;
         }
     }
