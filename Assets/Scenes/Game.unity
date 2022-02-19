@@ -255,7 +255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -128.47003, y: -143.8}
+  m_AnchoredPosition: {x: -128.47003, y: -143.79999}
   m_SizeDelta: {x: 22.6, y: 18.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &20933126
@@ -1096,6 +1096,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: aabdbb671bcf28b4a97ca825ddb876e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: aabdbb671bcf28b4a97ca825ddb876e3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aabdbb671bcf28b4a97ca825ddb876e3, type: 3}
       propertyPath: m_Name
@@ -2091,7 +2095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7851373675716632640, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 7851373675747141976, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_Name
@@ -2137,6 +2141,10 @@ PrefabInstance:
     - target: {fileID: 1380527389225884071, guid: ecedc2b1e17c6ba4cb95ea9c95000487, type: 3}
       propertyPath: m_Name
       value: "T\xE9l\xE9vision"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380527389225884071, guid: ecedc2b1e17c6ba4cb95ea9c95000487, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1757335089604313885, guid: ecedc2b1e17c6ba4cb95ea9c95000487, type: 3}
       propertyPath: m_RootOrder
@@ -3357,6 +3365,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b49ec1554c3ccb041b2a604d4941eb82, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b49ec1554c3ccb041b2a604d4941eb82, type: 3}
       propertyPath: m_Name
       value: TelevisionBoutonVolumeDown
@@ -3833,8 +3845,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4358,6 +4370,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 78c81ccad7e54b346be6903a60723198, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 78c81ccad7e54b346be6903a60723198, type: 3}
       propertyPath: m_Name
       value: TelevisionBoutonLastSong
@@ -4631,6 +4647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c3d60ccca93879748a43aa5e0264ac59, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c3d60ccca93879748a43aa5e0264ac59, type: 3}
       propertyPath: m_Name
       value: TelevisionBoutonVolumeUp
@@ -4693,6 +4713,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 88c8ea0504a36ec45814235a485ad213, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 88c8ea0504a36ec45814235a485ad213, type: 3}
       propertyPath: m_Name
       value: TelevisionBoutonNextSong
@@ -4750,6 +4774,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 20a5b8a8d3532084ebca9df5a7482af5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 20a5b8a8d3532084ebca9df5a7482af5, type: 3}
       propertyPath: m_Name
       value: TelevisionBoutonPlay
@@ -4792,7 +4820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -98.16998, y: -126.119995}
+  m_AnchoredPosition: {x: -98.16992, y: -126.119995}
   m_SizeDelta: {x: 24.41, y: 17.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541039083
@@ -6097,6 +6125,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c9e557d097d35f4d98fef7c5f72a5bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0c9e557d097d35f4d98fef7c5f72a5bb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0c9e557d097d35f4d98fef7c5f72a5bb, type: 3}
       propertyPath: m_Name
