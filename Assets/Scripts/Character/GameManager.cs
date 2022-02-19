@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public float Score;
     public float Vitesse;
     [SerializeField] private Text ScorePlayer;
+    public Animator scoreAnimator;
     private ContactObstacle ContactFromCharacter;
     [SerializeField] private CharacterInput BoolSliding;
     [SerializeField] private GameObject Collider;
@@ -90,6 +91,7 @@ public class GameManager : MonoBehaviour
     {
         if(TouchTheObject == true)
         {
+            scoreAnimator.SetTrigger("bump");
             Score += 1 * multiplicateur;
         }
     }

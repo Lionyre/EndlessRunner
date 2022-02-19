@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterFX : MonoBehaviour
 {
     [SerializeField] private ScreenShake _screenShake;
+    public Animator scoreAnimator;
     [SerializeField] private ParticleSystem[] _particles;
     [SerializeField] private CharacterRenderer _characterRenderer;
     [SerializeField] private BlazingSun _blazingSun;
@@ -52,6 +53,7 @@ public class CharacterFX : MonoBehaviour
     {
         _particles[5].Play();
         _sounds[2].Play();
+        scoreAnimator.SetTrigger("bump");
     }
 
     public void SlideFX()
@@ -73,7 +75,9 @@ public class CharacterFX : MonoBehaviour
     {
         _screenShake.CameraShake(0, 1, 8, 0.2f);
         
-        _particles[11].Play();
+        // _particles[11].Play();
+        _particles[8].Play();
+        _sounds[4].Play();
         _characterRenderer.gameObject.SetActive(false);
     }
 
