@@ -27,6 +27,7 @@ public class ContactObstacle : MonoBehaviour
         if(other.gameObject.tag == "Anneau")
         {
             Debug.Log("ToucheAnneau");
+            _characterFX.JumpFX();
             inputChara.TimerSaut += 1f;
         }
     }
