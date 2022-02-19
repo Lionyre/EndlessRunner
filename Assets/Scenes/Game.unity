@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28639832, g: 0.29087266, b: 0.35626522, a: 1}
+  m_IndirectSpecularColor: {r: 0.34780237, g: 0.35227102, b: 0.4075222, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -255,7 +255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -128.47, y: -143.8}
+  m_AnchoredPosition: {x: -128.47003, y: -143.8}
   m_SizeDelta: {x: 22.6, y: 18.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &20933126
@@ -301,7 +301,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 20933127}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115529957}
+        m_TargetAssemblyTypeName: SoundVolumeController, Assembly-CSharp
+        m_MethodName: DownVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &20933127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,6 +669,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &115529957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115529955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec11e9d03993ee946b871129a168980c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioMixer: {fileID: 24100000, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
+--- !u!114 &115529958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115529955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9eb67bdfb178a04fa298b83ec70b3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blazingSun: {fileID: 1691811944}
 --- !u!1001 &153516963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1259,7 +1297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -157.4, y: -126.8}
+  m_AnchoredPosition: {x: -157.39996, y: -126.8}
   m_SizeDelta: {x: 24.41, y: 17.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424004066
@@ -1305,7 +1343,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 424004067}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115529958}
+        m_TargetAssemblyTypeName: SwitchMusic, Assembly-CSharp
+        m_MethodName: PreviousMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &424004067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1803,11 +1853,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7851373674498233076, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -129.85
+      value: -129.85004
       objectReference: {fileID: 0}
     - target: {fileID: 7851373674498233076, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -41.33
+      value: -41.330017
       objectReference: {fileID: 0}
     - target: {fileID: 7851373674498233077, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1959,7 +2009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7851373675604454720, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -46.100006
+      value: -46.099976
       objectReference: {fileID: 0}
     - target: {fileID: 7851373675604454721, guid: 86cb2143e113f5d4eaf247a3b0772730, type: 3}
       propertyPath: m_Color.a
@@ -3554,7 +3604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -129.85, y: -74.25}
+  m_AnchoredPosition: {x: -129.85004, y: -74.25}
   m_SizeDelta: {x: 45.09, y: 20.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1003847812
@@ -3917,7 +3967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -128.13998, y: -108.92}
+  m_AnchoredPosition: {x: -128.13995, y: -108.91998}
   m_SizeDelta: {x: 23.4, y: 16.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178375284
@@ -3963,7 +4013,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1178375285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115529957}
+        m_TargetAssemblyTypeName: SoundVolumeController, Assembly-CSharp
+        m_MethodName: UpVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1178375285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,7 +4709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -98.17001, y: -126.119995}
+  m_AnchoredPosition: {x: -98.16998, y: -126.119995}
   m_SizeDelta: {x: 24.41, y: 17.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541039083
@@ -4693,7 +4755,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1541039084}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115529958}
+        m_TargetAssemblyTypeName: SwitchMusic, Assembly-CSharp
+        m_MethodName: NextMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1541039084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4861,7 +4935,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -133.19998, y: -393.29}
+  m_AnchoredPosition: {x: -133.20001, y: -393.29}
   m_SizeDelta: {x: 45.09, y: 22.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1573813804
@@ -5111,6 +5185,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 817872784, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
+    - target: {fileID: 1197407622, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
+    - target: {fileID: 1650874131, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
+    - target: {fileID: 2054178894, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054178894, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
     - target: {fileID: 1642982603992327648, guid: 32a72ce985c2510459dc5bb7749a1db0, type: 3}
       propertyPath: m_Name
       value: Prefab_BlazingSun
@@ -5930,6 +6024,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2038781634, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
     - target: {fileID: 5002918735040713677, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -5982,9 +6080,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slide
       objectReference: {fileID: 0}
+    - target: {fileID: 5002918735044062255, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
     - target: {fileID: 5002918735196954246, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
       propertyPath: m_Volume
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5002918735196954246, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
+    - target: {fileID: 5002918735235226104, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
+    - target: {fileID: 5002918735415069220, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
+    - target: {fileID: 5002918736094831980, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 3e45651d1cdc1c44bb6d2c72ca2b76c8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e0f564e7b917704d83d4647387d2d65, type: 3}
