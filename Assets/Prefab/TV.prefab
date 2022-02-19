@@ -1,0 +1,536 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6942486861301373272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7204366120772725938}
+  m_Layer: 0
+  m_Name: TV
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7204366120772725938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942486861301373272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.784474, y: 3.9947567, z: 9.96543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1973463084234238450}
+  - {fileID: 6808220653951816869}
+  - {fileID: 6211307203448246528}
+  - {fileID: 3801922310077353472}
+  - {fileID: 8749111873184999659}
+  - {fileID: 5995317684770929008}
+  - {fileID: 9095683840362500012}
+  - {fileID: 7198279792872014611}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2083371422941285913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.332104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8646238
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8211333
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+      propertyPath: m_Name
+      value: TelevisionBoutonExit
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+--- !u!4 &1973463084234238450 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bd79041c7846a384aaf9e1d5909f9dfa, type: 3}
+  m_PrefabInstance: {fileID: 2083371422941285913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3695657935846140395
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.332104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9077566
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8182873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+      propertyPath: m_Name
+      value: TelevisionBoutonPlay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+--- !u!4 &3801922310077353472 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 18ef578e43ef7bd49a9f34b9f4db455a, type: 3}
+  m_PrefabInstance: {fileID: 3695657935846140395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5888535142412515051
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4727452
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4754754
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.83193994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+      propertyPath: m_Name
+      value: TelevisionBoutonNextSong
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+--- !u!4 &6211307203448246528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 76d318fb1f6635d488a8e0b5f5321b56, type: 3}
+  m_PrefabInstance: {fileID: 5888535142412515051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6104942475508326043
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3319004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3894068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.84462714
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+      propertyPath: m_Name
+      value: TelevisionBoutonVolumeDown
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+--- !u!4 &5995317684770929008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9602ef6c8995a9242899ccb3be8883aa, type: 3}
+  m_PrefabInstance: {fileID: 6104942475508326043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6480980999008940878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1914625
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47614223
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8503389
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+      propertyPath: m_Name
+      value: TelevisionBoutonLastSong
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+--- !u!4 &6808220653951816869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9258e386d80d7c549895968c1e710b66, type: 3}
+  m_PrefabInstance: {fileID: 6480980999008940878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7237236394987300088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+      propertyPath: m_Name
+      value: TelevisionWithoutButtons
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+--- !u!4 &7198279792872014611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ec1b5c3ea8caccf4d9f9c1337a5fc4ab, type: 3}
+  m_PrefabInstance: {fileID: 7237236394987300088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8768760530965637191
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3319004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56220496
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8377944
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+      propertyPath: m_Name
+      value: TelevisionBoutonVolumeUp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+--- !u!4 &9095683840362500012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1427023447472274a98a8dc5356dce61, type: 3}
+  m_PrefabInstance: {fileID: 8768760530965637191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9142781793087606528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7204366120772725938}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.332104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.73519826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8296694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+      propertyPath: m_Name
+      value: TelevisionBoutonPlayRythm
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+--- !u!4 &8749111873184999659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca54509dbc4375a47a154aa9e3573b2f, type: 3}
+  m_PrefabInstance: {fileID: 9142781793087606528}
+  m_PrefabAsset: {fileID: 0}
