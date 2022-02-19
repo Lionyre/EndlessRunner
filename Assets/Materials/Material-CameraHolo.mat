@@ -116,7 +116,7 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - unscaleTime: 86.69526
+    - unscaleTime: 74.32621
     m_Colors:
     - Color_8644d913323e40c0af3f1c5e4945fa12: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 0}
     - Color_b7f876b28de64b18bc823beed88287fe: {r: 0.809, g: 0.809, b: 0.809, a: 0}
