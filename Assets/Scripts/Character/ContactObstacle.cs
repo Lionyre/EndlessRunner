@@ -37,10 +37,11 @@ public class ContactObstacle : MonoBehaviour
     }
     void LaVie()
     {
-        if(Vie <= 0)
+        if(Vie == 0)
         {
             IsDead = true;
             _characterFX.DeathFX();
+            Vie = -1;
         }
     }
 
